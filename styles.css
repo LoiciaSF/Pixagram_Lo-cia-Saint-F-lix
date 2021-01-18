@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 'Semi-bold';
+    src: local('Poppins-SemiBold'), url('font/HKGrotesk-Bold.woff') format('woff');
+}
+
+
+body{
+
+
+}
+
+.pixagramlogonav{
+    width:50px;
+}
+
+.fontpixagramlogo, h1{
+display:inline-block;
+}
+
+header article, li {
+    display:none;
+}
+
+header
