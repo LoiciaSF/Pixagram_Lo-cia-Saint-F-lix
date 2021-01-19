@@ -39,6 +39,7 @@ h2 {
   justify-content: center;
   font-weight: bold;
   font-size: 25px;
+  width: 100%;
 }
 
 h3 {
@@ -53,6 +54,7 @@ h3 {
 }
 /*Logo et label pixagram*/
 .fontpixagramlogo {
+  height: 5vh;
   align-items: center;
 }
 
@@ -75,7 +77,6 @@ header p {
   justify-content: space-between;
   width: 100%;
   padding: 15px 0px 15px 0px;
-  box-shadow: ;
 }
 .iconright {
   display: flex;
@@ -198,9 +199,26 @@ h3,
 
 .foursection {
   display: flex;
+  flex-wrap: wrap;
 }
 
-.franceicon,
-.qualityicon {
-  display: inline-block;
+.foursection {
+  display: flex;
+}
+
+.foursection p {
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  width: 100%;
+  background-color: #eeeded;
+}
+footer ul {
+  justify-content: center;
+  align-items: center;
 }
