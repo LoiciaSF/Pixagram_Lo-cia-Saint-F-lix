@@ -1,26 +1,152 @@
 @font-face {
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 'Semi-bold';
-    src: local('Poppins-SemiBold'), url('font/HKGrotesk-Bold.woff') format('woff');
+    font-weight:400;
+    src: local(""), url("/fonts/poppins-v15-latin-regular.woff") format("woff");
 }
 
 
 body{
 
-
 }
 
+header{
+  
+}
+
+button, a{
+    cursor:pointer;
+}
+
+h2{
+display: flex;
+justify-content:center;
+font-weight:bold;
+}
+
+/*logo pixagram dans la nav*/
 .pixagramlogonav{
     width:50px;
+    justify-content:center;
+}
+/*Logo et label pixagram*/
+.fontpixagramlogo{
+   align-items:center;
 }
 
-.fontpixagramlogo, h1{
-display:inline-block;
+/*aligner les quatres éléments de la nav sur la même ligne*/
+.fontpixagramlogo, 
+h1{
+display:flex;
+flex-direction:row;
+align-items:center;
 }
 
-header article, li {
+header article, 
+header li,
+header p {
     display:none;
 }
+.high-header{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    width:100%;
+    padding:15px 0px 15px 0px;
+    box-shadow: ;
+}
+.iconright{
+    display:flex;
+    flex-direction:row;
+    justify-content:right;
+}
 
-header
+.usericon,
+.bagicon{
+width:30px;
+}
+
+
+
+/*Hero image*/
+.hero-image{
+background-image:url("images-icones/img/concoursphoto.jpg");
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+position: relative;
+width:100%;
+height:50vh;
+}
+
+/*Placer le texte */
+.hero-text{
+    width:40%;
+    display:table-cell;
+    text-align:left;
+    vertical-align: middle;
+    position:absolute;
+  color:#fff;
+  
+}
+/*Styliser le bouton du hero full image*/
+.hero-text button{
+    border:1.7px solid #fff;
+    padding:.5rem .5rem;
+    border-radius:20px;
+    color:#00CDC6;
+    background:#fff;
+    font-weight:bold;
+}
+
+
+/*****************Vos options photo***************/
+
+.image-photoalbum{
+    background-image:url("images-icones/img/albumphoto.jpg");
+}
+.image-photoprinting{
+    background-image:url("images-icones/img/tiragephoto.jpg");
+}
+.image-photocalendar{
+    background-image:url("images-icones/img/calendrierphoto.jpg");
+}
+.image-photodeco{
+    background-image:url("images-icones/img/decophoto.jpg");
+}
+.image-photoshareandcards{
+    background-image:url("images-icones/img/faire-partetcartes.jpg");
+}
+.image-photoobjects{
+    background-image:url("images-icones/img/objetsphoto.jpg");
+}
+
+.image-photoalbum,
+.image-photoprinting,
+.image-photocalendar,
+.image-photodeco,
+.image-photoshareandcards,
+.image-photoobjects {
+display:flex;
+justify-content:;
+background-position:end;
+background-repeat:no-repeat;
+background-size:cover;
+/*position: relative;*/
+margin-top:3%;
+width:40%;
+height:100vh;
+}
+
+.firstsection{
+
+}
+
+.firstsection button{
+    border:1.7px solid #00CDC6;
+    padding:.5rem .5rem;
+    border-radius:20px;
+    color:#fff;
+    background:#00CDC6;
+    font-weight:bold;
+}

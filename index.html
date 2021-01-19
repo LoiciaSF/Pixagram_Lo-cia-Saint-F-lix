@@ -2,16 +2,17 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixagram</title>
     <link type="text/css" rel="stylesheet" href="styles.css">
+    <link type="text/css" rel="stylesheet" href="reset.css">
 </head>
 
 <body>
 
     <header>
-        <div>
+        <div class="high-header">
             <article>Gift ideas</article>
             <article>Les promos</article>
             <div class="fontpixagramlogo">
@@ -19,9 +20,14 @@
                 <h1>Pixagram</h1>
             </div>
             <article>Recherche</article>
-            <article> <img class="" src="./images-icones/svg/user.svg">
-                Mon compte</article>
-            <article><img src="./images-icones/svg/shopping-bag.svg">Mon panier</article>
+            <div class="iconright">
+                <div><img class="usericon" src="./images-icones/svg/user.svg">
+                    <p>Mon compte</p>
+                </div>
+                <div><img class="bagicon" src="./images-icones/svg/shopping-bag.svg">
+                    <p>Mon panier</p>
+                </div>
+            </div>
         </div>
         <nav>
             <ul>
@@ -36,19 +42,88 @@
     </header>
 
     <main>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
+        <div class="hero-image">
+            <div class="hero-text">
+                <p>Participez à notre concours photo !</p>
+                <p>Mettez en scène vos albums Pixagram de façon originale !</p>
+                <p>La photo la plus likée apparaîtra dans nos pages produit. Le gagnant aura aussi le droit à des
+                    réductions de -30% pendant 3 mois sur ses commandes.</p>
+                <button>Ça m'intéresse !</button>
+            </div>
+        </div>
+        </section>
+        <section class="firstsection">
+            <h2>Vos options photo</h2>
+            <article class="image-photoalbum">
+                <button class="photoalbumbutton">Album Photo</button>
+            </article>
+            <article class="image-photoprinting">
+                <button class="photoprintingbutton">Tirage Photo</button>
+            </article>
+            <article class="image-photocalendar">
+                <button class="photocalendarbutton">Calendrier Photo</button>
+            </article>
+            <article class="image-photodeco">
+                <button class="photodecobutton">Déco Photo</button>
+            </article>
+            <article class="image-photoshareandcards">
+                <button class="photoshareandcardsbutton">Faire part et cartes</button>
+            </article>
+            <article class="image-photoobjects">
+                <button class="photoobjectsbutton">Objets Photo</button>
+            </article>
+        </section>
+        <section>
+            <h2>Les tendances clients</h2>
+        </section>
+        <section>
+            <h2>Nos avis clients</h2>
+        </section>
+        <section>
+            <h2>Nos valeurs</h2>
+        </section>
+        <section>
+            <h2>Qui sommes-nous ?</h2>
+        </section>
+        <section>
+            <h2>Le blog</h2>
+        </section>
+        <section>
+            <article>Paiement sécurisé</article>
+            <article>Livraison rapide, sécurisé et flexible</article>
+            <article>Gardons le contact !</article>
+        </section>
+
     </main>
 
     <footer>
-
+        <h3>Nos produits</h3>
+        <ul>
+            <li>Tous nos produits</li>
+            <li>Livre photo</li>
+            <li>Tirage photo</li>
+            <li>Calendrier photo</li>
+            <li>Déco photo</li>
+            <li>Faire-part et cartes</li>
+            <li>Objets photo</li>
+        </ul>
+        <h3>A propos</h3>
+        <ul>
+            <li>Le blog</li>
+            <li>Qui sommes-nous ?</li>
+            <li>Recrutement</li>
+            <li>Mentions légales</li>
+            <li>Conditions générales de vente</li>
+            <li>Faire-part et cartes</li>
+        </ul>
+        <h3>Aide</h3>
+        <ul>
+            <li>Contactez-nous</li>
+            <li>Plan du site</li>
+            <li>FAQ</li>
+            <li>Code promo Pixagram</li>
+            <li>Les tutos</li>
+        </ul>
     </footer>
 
     <script src="pixagram.js"></script>
