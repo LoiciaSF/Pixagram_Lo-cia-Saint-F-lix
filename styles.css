@@ -1,129 +1,142 @@
 @font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight:400;
-    src: local(""), url("/fonts/poppins-v15-latin-regular.woff") format("woff");
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: local("poppins"),
+    url("/fonts/poppins-v15-latin-regular.woff") format("woff");
 }
 
-
-body{
-    margin-left:0;
-    margin-right:0;
+body {
+  margin-left: 0;
+  margin-right: 0;
+  font-family: "Poppins", sans-serif;
 }
 
-header{
-  
+header {
+  top: 0;
+  height: 10%;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  z-index: 1;
+  box-shadow: -20px -10px 20px black;
 }
-section{
-    margin-top:5%;
+section {
+  margin-top: 5%;
 }
 
-button, a{
-    cursor:pointer;
+p {
+  font-size: 16px;
 }
 
-h2{
-display: flex;
-justify-content:center;
-font-weight:bold;
+button,
+a {
+  cursor: pointer;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+h3 {
+  margin-top: 3%;
+  margin-bottom: 2%;
 }
 
 /*logo pixagram dans la nav*/
-.pixagramlogonav{
-    width:50px;
-    justify-content:center;
+.pixagramlogonav {
+  width: 50px;
+  justify-content: center;
 }
 /*Logo et label pixagram*/
-.fontpixagramlogo{
-   align-items:center;
+.fontpixagramlogo {
+  align-items: center;
 }
 
 /*aligner les quatres éléments de la nav sur la même ligne*/
-.fontpixagramlogo, 
-h1{
-display:flex;
-flex-direction:row;
-align-items:center;
+.fontpixagramlogo,
+h1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-header article, 
+header article,
 header li,
 header p {
-    display:none;
+  display: none;
 }
-.high-header{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    width:100%;
-    padding:15px 0px 15px 0px;
-    box-shadow: ;
+.high-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 0px 15px 0px;
+  box-shadow: ;
 }
-.iconright{
-    display:flex;
-    flex-direction:row;
-    justify-content:right;
+.iconright {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
 }
 
 .usericon,
-.bagicon{
-width:30px;
+.bagicon {
+  width: 30px;
 }
 
-
-
 /*Hero image*/
-.hero-image{
-background-image:url("images-icones/img/concoursphoto.jpg");
-background-position:center;
-background-repeat:no-repeat;
-background-size:cover;
-position: relative;
-margin-top:0%;
-width:100%;
-height:50vh;
+.hero-image {
+  background-image: url("images-icones/img/concoursphoto.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 50vh;
 }
 
 /*Placer le texte */
-.hero-text{
-    width:40%;
-    display:table-cell;
-    text-align:left;
-    vertical-align: middle;
-    position:absolute;
-  color:#fff;
-  
+.hero-text {
+  width: 40%;
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+  position: absolute;
+  color: #fff;
 }
 /*Styliser le bouton du hero full image*/
-.hero-text button{
-    border:1.7px solid #fff;
-    padding:.5rem .5rem;
-    border-radius:20px;
-    color:#00CDC6;
-    background:#fff;
-    font-weight:bold;
+.hero-text button {
+  border: 1.7px solid #fff;
+  padding: 0.5rem 0.5rem;
+  border-radius: 20px;
+  color: #00cdc6;
+  background: #fff;
+  font-weight: bold;
 }
-
 
 /*****************Vos options photo***************/
 
-.image-photoalbum{
-    background-image:url("images-icones/img/albumphoto.jpg");
+.image-photoalbum {
+  background-image: url("images-icones/img/albumphoto.jpg");
 }
-.image-photoprinting{
-    background-image:url("images-icones/img/tiragephoto.jpg");
+.image-photoprinting {
+  background-image: url("images-icones/img/tiragephoto.jpg");
 }
-.image-photocalendar{
-    background-image:url("images-icones/img/calendrierphoto.jpg");
+.image-photocalendar {
+  background-image: url("images-icones/img/calendrierphoto.jpg");
 }
-.image-photodeco{
-    background-image:url("images-icones/img/decophoto.jpg");
+.image-photodeco {
+  background-image: url("images-icones/img/decophoto.jpg");
 }
-.image-photoshareandcards{
-    background-image:url("images-icones/img/faire-partetcartes.jpg");
+.image-photoshareandcards {
+  background-image: url("images-icones/img/faire-partetcartes.jpg");
 }
-.image-photoobjects{
-    background-image:url("images-icones/img/objetsphoto.jpg");
+.image-photoobjects {
+  background-image: url("images-icones/img/objetsphoto.jpg");
 }
 
 .image-photoalbum,
@@ -132,31 +145,62 @@ height:50vh;
 .image-photodeco,
 .image-photoshareandcards,
 .image-photoobjects {
-display:flex;
-justify-content:center;
-align-items:flex-end;
-background-position:end;
-background-repeat:no-repeat;
-background-size:cover;
-position: relative;
-padding-bottom:3%;
-margin-top:3%;
-margin-left:30%;
-width:40%;
-height:70vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-position: end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 8px;
+  padding-bottom: 3%;
+  margin-top: 3%;
+  margin-left: 30%;
+  width: 40%;
+  height: 70vh;
 }
 
-.firstsection article{
-    display:flex;
-    justify-content:center;
-
+.firstsection article {
+  display: flex;
+  justify-content: center;
 }
 
-.firstsection button{
-    border:1.7px solid #00CDC6;
-    padding:.7rem 1.2rem;
-    border-radius:20px;
-    color:#fff;
-    background:#00CDC6;
-    font-weight:bold;
+.firstsection button {
+  border: 1.7px solid #00cdc6;
+  padding: 0.7rem 1.2rem;
+  border-radius: 20px;
+  color: #fff;
+  background: #00cdc6;
+  font-weight: bold;
+}
+
+/*dimensionner*/
+.secondsection {
+  width: 100%;
+}
+.secondsection img {
+  display: flex;
+  margin: auto;
+}
+h3,
+.secondsection p,
+.second section a {
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+}
+
+.nostalgicphotos,
+.instaprinting {
+  width: 40%;
+  border-radius: 8px;
+}
+
+.foursection {
+  display: flex;
+}
+
+.franceicon,
+.qualityicon {
+  display: inline-block;
 }
