@@ -3,13 +3,29 @@
   font-style: normal;
   font-weight: 400;
   src: local("poppins"),
-    url("/fonts/poppins-v15-latin-regular.woff") format("woff");
+    url("/fonts/poppins-v15-latin-regular.woff") format("woff"),
+    url("/fonts/poppins-v15-latin-regular.woff2") format("woff2");
 }
 
 body {
   margin-left: 0;
   margin-right: 0;
   font-family: "Poppins", sans-serif;
+}
+/*tous les paragraphes*/
+p {
+  font-size: 16px;
+}
+
+/*espacemententre les sections*/
+section {
+  margin-top: 5%;
+}
+
+/*Au passage des boutons et des liens le curseur passe en pointeur*/
+button,
+a {
+  cursor: pointer;
 }
 
 header {
@@ -21,32 +37,28 @@ header {
   z-index: 1;
   box-shadow: -20px -10px 20px black;
 }
-section {
-  margin-top: 5%;
+
+header figcaption {
+  font-size: 13px;
 }
 
-p {
-  font-size: 16px;
-}
-
-button,
-a {
-  cursor: pointer;
-}
-
-h2 {
+.high-header {
   display: flex;
   justify-content: center;
-  font-weight: bold;
-  font-size: 25px;
+  align-items: center;
   width: 100%;
 }
 
-h3 {
-  margin-top: 3%;
-  margin-bottom: 2%;
+.giftideasfigure,
+.discountfigure,
+.searchfigure,
+.myaccounttext,
+.mybagtext,
+header li {
+  display: none;
 }
 
+/************Positionnement des éléments*********/
 /*logo pixagram dans la nav*/
 .pixagramlogonav {
   width: 50px;
@@ -57,8 +69,6 @@ h3 {
   height: 5vh;
   align-items: center;
 }
-
-/*aligner les quatres éléments de la nav sur la même ligne*/
 .fontpixagramlogo,
 h1 {
   display: flex;
@@ -66,27 +76,11 @@ h1 {
   align-items: center;
 }
 
-header article,
-header li,
-header p {
-  display: none;
-}
-.high-header {
+.myaccountfigure,
+.mybagfigure {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  padding: 15px 0px 15px 0px;
-}
-.iconright {
-  display: flex;
-  flex-direction: row;
   justify-content: right;
-}
-
-.usericon,
-.bagicon {
-  width: 30px;
+  align-items: center;
 }
 
 /*Hero image*/
@@ -119,7 +113,21 @@ header p {
   font-weight: bold;
 }
 
-/*****************Vos options photo***************/
+/*styliser tous les h2 et h3*/
+h2 {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 25px;
+  width: 100%;
+}
+
+h3 {
+  margin-top: 3%;
+  margin-bottom: 2%;
+}
+
+/*****************Section 1 - Vos options photo***************/
 
 .image-photoalbum {
   background-image: url("images-icones/img/albumphoto.jpg");
@@ -149,7 +157,7 @@ header p {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  background-position: end;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -175,17 +183,18 @@ header p {
   font-weight: bold;
 }
 
+/***************Section 2 - Les tendances clients*****************/
 /*dimensionner*/
-.secondsection {
+.sectiontwo {
   width: 100%;
 }
-.secondsection img {
+.sectiontwo img {
   display: flex;
   margin: auto;
 }
 h3,
-.secondsection p,
-.second section a {
+.sectiontwo p,
+.sectiontwo a {
   width: 50%;
   margin-left: 25%;
   text-align: center;
@@ -197,16 +206,20 @@ h3,
   border-radius: 8px;
 }
 
-.foursection {
+/***************Section 3 - Nos avis clients*****************/
+
+/***************Section 4 - Nos valeurs*****************/
+
+.sectionfour {
   display: flex;
   flex-wrap: wrap;
 }
 
-.foursection {
+.sectionfour {
   display: flex;
 }
 
-.foursection p {
+.sectionfour p {
   width: 50%;
   margin-left: 25%;
   text-align: center;
@@ -222,3 +235,40 @@ footer ul {
   justify-content: center;
   align-items: center;
 }
+
+/***************Section 5 - Qui sommes-nous ? *****************/
+
+.image-pixateam {
+  background-image: url("images-icones/img/equipepixagram.jpg");
+}
+.image-instagrampixa {
+  background-image: url("images-icones/img/smartphoneinstagram.jpg");
+}
+
+.sectionfive button {
+  border: 1.7px solid #00cdc6;
+  padding: 0.7rem 1.2rem;
+  border-radius: 20px;
+  color: #fff;
+  background: #00cdc6;
+  font-weight: bold;
+}
+
+.image-pixateam,
+.image-instagrampixa {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 8px;
+  padding-bottom: 3%;
+  margin-top: 3%;
+  margin-left: 30%;
+  width: 40%;
+  height: 70vh;
+}
+
+/***************Section 6 - Le blog *****************/
