@@ -11,7 +11,9 @@ body {
   margin-left: 0;
   margin-right: 0;
   font-family: "Poppins", sans-serif;
+  width: fit-content;
 }
+
 /*tous les paragraphes*/
 p {
   font-size: 16px;
@@ -30,7 +32,7 @@ a {
 
 header {
   top: 0;
-  height: 10%;
+  height: 8%;
   width: 100%;
   background-color: #fff;
   position: fixed;
@@ -38,14 +40,8 @@ header {
   box-shadow: -20px -10px 20px black;
 }
 
-header figcaption {
-  font-size: 13px;
-}
-
 .high-header {
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
 }
 
@@ -58,29 +54,48 @@ header li {
   display: none;
 }
 
-/************Positionnement des éléments*********/
+/************Positionnement des éléments header*********/
 /*logo pixagram dans la nav*/
 .pixagramlogonav {
-  width: 50px;
+  width: 30%;
   justify-content: center;
 }
 /*Logo et label pixagram*/
 .fontpixagramlogo {
-  height: 5vh;
+  justify-content: center;
   align-items: center;
 }
 .fontpixagramlogo,
 h1 {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 
+h1 {
+  margin-left: 7%;
+  font-size: 30px;
+}
+
+.righticonheader {
+  display: flex;
+  width: 30%;
+}
 .myaccountfigure,
 .mybagfigure {
-  display: flex;
+  display: ;
   justify-content: right;
   align-items: center;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.mybagsvg,
+.accountsvg {
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
 }
 
 /*Hero image*/
@@ -91,14 +106,18 @@ h1 {
   background-size: cover;
   position: relative;
   width: 100%;
-  height: 50vh;
+  height: 100vh;
+  margin-top: 16%;
 }
 
 /*Placer le texte */
 .hero-text {
-  width: 40%;
-  display: table-cell;
-  text-align: left;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-start;
   vertical-align: middle;
   position: absolute;
   color: #fff;
@@ -227,15 +246,6 @@ h3,
   justify-content: center;
 }
 
-footer {
-  width: 100%;
-  background-color: #eeeded;
-}
-footer ul {
-  justify-content: center;
-  align-items: center;
-}
-
 /***************Section 5 - Qui sommes-nous ? *****************/
 
 .image-pixateam {
@@ -272,3 +282,31 @@ footer ul {
 }
 
 /***************Section 6 - Le blog *****************/
+.sectionsix ul {
+  list-style-type: armenian;
+}
+
+.blogimg {
+  width: 40%;
+  border-radius: 8px;
+}
+/***************Section 7 - réassurance *****************/
+
+.paymentsimg,
+.laposteimg,
+.chronopostimg {
+  width: 20%;
+}
+
+/**********************footer*****************************/
+footer {
+  width: 100%;
+  background-color: #eeeded;
+}
+footer ul {
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+}
