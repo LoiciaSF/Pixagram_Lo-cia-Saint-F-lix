@@ -1,361 +1,975 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pixagram</title>
-    <link type="text/css" rel="stylesheet" href="styles.css">
-    <link type="text/css" rel="stylesheet" href="reset.css">
-</head>
+    <link type="text/css" rel="stylesheet" href="styles.css" />
+    <link type="text/css" rel="stylesheet" href="reset.css" />
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <div class="high-header">
-            <figure class="giftideasfigure">
-                <svg class="giftideas" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                    <path id="Tracé_48" data-name="Tracé 48" d="M35.96,17.2a3.694,3.694,0,0,0,.986-2.521A3.646,3.646,0,0,0,33.335,11c-1.5,0-4.963,2.247-6.348,4.264-1.43-2.018-4.878-4.2-6.322-4.2a3.65,3.65,0,0,0-3.611,3.677,3.7,3.7,0,0,0,.921,2.449H11v8.784h1.907V43H41.1V25.981H43V17.2H35.96Zm-2.625-4.833a2.3,2.3,0,0,1,2.247,2.384,2.381,2.381,0,0,1-1.842,2.344H28.215c-.353-.1-.464-.229-.464-.3C27.751,15.63,31.833,12.365,33.335,12.365Zm-12.669,0c1.43,0,5.584,3.265,5.584,4.428,0,.1-.242.222-.418.3H20.267a2.381,2.381,0,0,1-1.842-2.344,2.332,2.332,0,0,1,2.24-2.384Zm2.247,29.27H14.265V25.981h8.647Zm0-16.947H12.365V18.562H22.918v6.126Zm6.8,16.947H24.27V18.556h5.447Zm10.011,0H31.082V25.981h8.647Zm1.9-16.947H31.082V18.562H41.635v6.126Z" transform="translate(-11 -11)"/>
-                  </svg>                 
-                  <figcaption>Idées cadeaux</figcaption>
-            </figure>
-            <figure class="discountfigure">
-                <svg class="discount" xmlns="http://www.w3.org/2000/svg" width="34.209" height="35.86" viewBox="0 0 34.209 35.86">
-                    <g id="Groupe_36" data-name="Groupe 36">
-                      <g id="Groupe_35" data-name="Groupe 35">
-                        <path id="Tracé_60" data-name="Tracé 60" d="M42.919,18.393a1.056,1.056,0,0,1,0-.929l1.33-2.736a3.122,3.122,0,0,0-1.335-4.134L40.239,9.166a1.051,1.051,0,0,1-.543-.751l-.523-3a3.1,3.1,0,0,0-3.5-2.555l-3,.427A1.041,1.041,0,0,1,31.8,3L29.624.882a3.082,3.082,0,0,0-4.321,0L23.127,3a1.041,1.041,0,0,1-.878.287l-3-.427a3.1,3.1,0,0,0-3.5,2.555l-.523,3a1.051,1.051,0,0,1-.543.752l-2.675,1.427a3.122,3.122,0,0,0-1.335,4.134l1.33,2.736a1.056,1.056,0,0,1,0,.929l-1.33,2.736a3.122,3.122,0,0,0,1.335,4.134l2.675,1.427a1.051,1.051,0,0,1,.543.751l.523,3a3.1,3.1,0,0,0,3.051,2.587A3.162,3.162,0,0,0,19.251,33l3-.427a1.041,1.041,0,0,1,.878.287L25.3,34.974a3.082,3.082,0,0,0,4.321,0L31.8,32.857a1.042,1.042,0,0,1,.878-.287l3,.427a3.1,3.1,0,0,0,3.5-2.555l.523-3a1.051,1.051,0,0,1,.543-.752l2.675-1.427a3.122,3.122,0,0,0,1.335-4.134Zm-.969,5.043-2.675,1.427a3.1,3.1,0,0,0-1.6,2.221l-.523,3a1.048,1.048,0,0,1-1.183.864l-3-.427a3.076,3.076,0,0,0-2.6.848l-2.176,2.117a1.043,1.043,0,0,1-1.462,0L24.557,31.37a3.075,3.075,0,0,0-2.153-.88,3.138,3.138,0,0,0-.443.031l-3,.427a1.048,1.048,0,0,1-1.183-.864l-.523-3a3.1,3.1,0,0,0-1.6-2.221l-2.675-1.427a1.056,1.056,0,0,1-.452-1.4l1.33-2.736a3.122,3.122,0,0,0,0-2.745l-1.33-2.736a1.056,1.056,0,0,1,.452-1.4l2.675-1.427a3.1,3.1,0,0,0,1.6-2.221l.523-3a1.048,1.048,0,0,1,1.183-.864l3,.427a3.077,3.077,0,0,0,2.6-.848l2.176-2.117a1.043,1.043,0,0,1,1.462,0l2.176,2.117a3.076,3.076,0,0,0,2.6.848l3-.427a1.048,1.048,0,0,1,1.183.864l.523,3a3.1,3.1,0,0,0,1.6,2.221l2.675,1.427a1.056,1.056,0,0,1,.452,1.4l-1.33,2.736a3.122,3.122,0,0,0,0,2.745l1.33,2.736A1.056,1.056,0,0,1,41.95,23.436Z" transform="translate(-10.359 0.002)" fill="red"/>
-                      </g>
-                    </g>
-                    <g id="Groupe_38" data-name="Groupe 38" transform="translate(9.291 10.071)">
-                      <g id="Groupe_37" data-name="Groupe 37">
-                        <path id="Tracé_61" data-name="Tracé 61" d="M159.117,144.094a1.024,1.024,0,0,0-1.454,0l-13.571,13.65a1.038,1.038,0,0,0,0,1.462,1.024,1.024,0,0,0,1.454,0l13.571-13.65A1.038,1.038,0,0,0,159.117,144.094Z" transform="translate(-143.791 -143.791)" fill="red"/>
-                      </g>
-                    </g>
-                    <g id="Groupe_40" data-name="Groupe 40" transform="translate(9.222 8.623)">
-                      <g id="Groupe_39" data-name="Groupe 39">
-                        <path id="Tracé_62" data-name="Tracé 62" d="M146.572,123.116a3.792,3.792,0,1,0,3.77,3.792A3.785,3.785,0,0,0,146.572,123.116Zm0,5.515a1.724,1.724,0,1,1,1.714-1.724A1.72,1.72,0,0,1,146.572,128.631Z" transform="translate(-142.802 -123.116)" fill="red"/>
-                      </g>
-                    </g>
-                    <g id="Groupe_42" data-name="Groupe 42" transform="translate(17.447 19.654)">
-                      <g id="Groupe_41" data-name="Groupe 41">
-                        <path id="Tracé_63" data-name="Tracé 63" d="M264.692,280.61a3.792,3.792,0,1,0,3.77,3.792A3.785,3.785,0,0,0,264.692,280.61Zm0,5.515a1.724,1.724,0,1,1,1.714-1.724A1.721,1.721,0,0,1,264.692,286.125Z" transform="translate(-260.922 -280.61)" fill="red"/>
-                      </g>
-                    </g>
-                  </svg>                  
-                  <figcaption>Les promos</figcaption>
-            </figure>
-            <div class="fontpixagramlogo">
-                <img class="pixagramlogonav" src="./images-icones/svg/logopixagram.svg" alt="Logo Pixagram">
-                <h1>Pixagram</h1>
-            </div>
-            <figure class="searchfigure">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                    <g id="Groupe_117" data-name="Groupe 117">
-                      <path id="Tracé_185" data-name="Tracé 185" d="M31.8,30.862l-9.737-9.737a12.715,12.715,0,1,0-.943.943L30.862,31.8a.667.667,0,1,0,.943-.943ZM12.667,24A11.333,11.333,0,1,1,24,12.667,11.346,11.346,0,0,1,12.667,24Z" transform="translate(0 0)"/>
-                    </g>
-                  </svg>                            
-                  <figcaption>Recherche</figcaption>
-            </figure>
-            <div class="righticonheader">
-            <figure class="myaccountfigure">
-            <svg class="accountsvg" xmlns="http://www.w3.org/2000/svg" width="30.312" height="31.711" viewBox="0 0 30.312 31.711">
-                <g id="user" transform="translate(0)">
-                  <g id="Groupe_32" data-name="Groupe 32" transform="translate(0 15.896)">
-                    <g id="Groupe_31" data-name="Groupe 31">
-                      <path id="Tracé_58" data-name="Tracé 58" d="M26.484,257.323a15.173,15.173,0,0,0-15.156,15.156.659.659,0,1,0,1.318,0,13.838,13.838,0,0,1,27.676,0,.659.659,0,1,0,1.318,0A15.172,15.172,0,0,0,26.484,257.323Z" transform="translate(-11.328 -257.323)"/>
-                    </g>
-                  </g>
-                  <g id="Groupe_34" data-name="Groupe 34" transform="translate(7.907)">
-                    <g id="Groupe_33" data-name="Groupe 33">
-                      <path id="Tracé_59" data-name="Tracé 59" d="M146.576,0a7.248,7.248,0,1,0,7.248,7.248A7.257,7.257,0,0,0,146.576,0Zm0,13.179a5.931,5.931,0,1,1,5.93-5.931A5.938,5.938,0,0,1,146.576,13.179Z" transform="translate(-139.328 0)"/>
-                    </g>
+      <div class="high-header">
+        <figure class="giftideasfigure">
+          <svg
+            class="giftideas"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+          >
+            <path
+              id="Tracé_48"
+              data-name="Tracé 48"
+              d="M35.96,17.2a3.694,3.694,0,0,0,.986-2.521A3.646,3.646,0,0,0,33.335,11c-1.5,0-4.963,2.247-6.348,4.264-1.43-2.018-4.878-4.2-6.322-4.2a3.65,3.65,0,0,0-3.611,3.677,3.7,3.7,0,0,0,.921,2.449H11v8.784h1.907V43H41.1V25.981H43V17.2H35.96Zm-2.625-4.833a2.3,2.3,0,0,1,2.247,2.384,2.381,2.381,0,0,1-1.842,2.344H28.215c-.353-.1-.464-.229-.464-.3C27.751,15.63,31.833,12.365,33.335,12.365Zm-12.669,0c1.43,0,5.584,3.265,5.584,4.428,0,.1-.242.222-.418.3H20.267a2.381,2.381,0,0,1-1.842-2.344,2.332,2.332,0,0,1,2.24-2.384Zm2.247,29.27H14.265V25.981h8.647Zm0-16.947H12.365V18.562H22.918v6.126Zm6.8,16.947H24.27V18.556h5.447Zm10.011,0H31.082V25.981h8.647Zm1.9-16.947H31.082V18.562H41.635v6.126Z"
+              transform="translate(-11 -11)"
+            />
+          </svg>
+          <figcaption>Idées cadeaux</figcaption>
+        </figure>
+        <figure class="discountfigure">
+          <svg
+            class="discount"
+            xmlns="http://www.w3.org/2000/svg"
+            width="34.209"
+            height="35.86"
+            viewBox="0 0 34.209 35.86"
+          >
+            <g id="Groupe_36" data-name="Groupe 36">
+              <g id="Groupe_35" data-name="Groupe 35">
+                <path
+                  id="Tracé_60"
+                  data-name="Tracé 60"
+                  d="M42.919,18.393a1.056,1.056,0,0,1,0-.929l1.33-2.736a3.122,3.122,0,0,0-1.335-4.134L40.239,9.166a1.051,1.051,0,0,1-.543-.751l-.523-3a3.1,3.1,0,0,0-3.5-2.555l-3,.427A1.041,1.041,0,0,1,31.8,3L29.624.882a3.082,3.082,0,0,0-4.321,0L23.127,3a1.041,1.041,0,0,1-.878.287l-3-.427a3.1,3.1,0,0,0-3.5,2.555l-.523,3a1.051,1.051,0,0,1-.543.752l-2.675,1.427a3.122,3.122,0,0,0-1.335,4.134l1.33,2.736a1.056,1.056,0,0,1,0,.929l-1.33,2.736a3.122,3.122,0,0,0,1.335,4.134l2.675,1.427a1.051,1.051,0,0,1,.543.751l.523,3a3.1,3.1,0,0,0,3.051,2.587A3.162,3.162,0,0,0,19.251,33l3-.427a1.041,1.041,0,0,1,.878.287L25.3,34.974a3.082,3.082,0,0,0,4.321,0L31.8,32.857a1.042,1.042,0,0,1,.878-.287l3,.427a3.1,3.1,0,0,0,3.5-2.555l.523-3a1.051,1.051,0,0,1,.543-.752l2.675-1.427a3.122,3.122,0,0,0,1.335-4.134Zm-.969,5.043-2.675,1.427a3.1,3.1,0,0,0-1.6,2.221l-.523,3a1.048,1.048,0,0,1-1.183.864l-3-.427a3.076,3.076,0,0,0-2.6.848l-2.176,2.117a1.043,1.043,0,0,1-1.462,0L24.557,31.37a3.075,3.075,0,0,0-2.153-.88,3.138,3.138,0,0,0-.443.031l-3,.427a1.048,1.048,0,0,1-1.183-.864l-.523-3a3.1,3.1,0,0,0-1.6-2.221l-2.675-1.427a1.056,1.056,0,0,1-.452-1.4l1.33-2.736a3.122,3.122,0,0,0,0-2.745l-1.33-2.736a1.056,1.056,0,0,1,.452-1.4l2.675-1.427a3.1,3.1,0,0,0,1.6-2.221l.523-3a1.048,1.048,0,0,1,1.183-.864l3,.427a3.077,3.077,0,0,0,2.6-.848l2.176-2.117a1.043,1.043,0,0,1,1.462,0l2.176,2.117a3.076,3.076,0,0,0,2.6.848l3-.427a1.048,1.048,0,0,1,1.183.864l.523,3a3.1,3.1,0,0,0,1.6,2.221l2.675,1.427a1.056,1.056,0,0,1,.452,1.4l-1.33,2.736a3.122,3.122,0,0,0,0,2.745l1.33,2.736A1.056,1.056,0,0,1,41.95,23.436Z"
+                  transform="translate(-10.359 0.002)"
+                  fill="red"
+                />
+              </g>
+            </g>
+            <g
+              id="Groupe_38"
+              data-name="Groupe 38"
+              transform="translate(9.291 10.071)"
+            >
+              <g id="Groupe_37" data-name="Groupe 37">
+                <path
+                  id="Tracé_61"
+                  data-name="Tracé 61"
+                  d="M159.117,144.094a1.024,1.024,0,0,0-1.454,0l-13.571,13.65a1.038,1.038,0,0,0,0,1.462,1.024,1.024,0,0,0,1.454,0l13.571-13.65A1.038,1.038,0,0,0,159.117,144.094Z"
+                  transform="translate(-143.791 -143.791)"
+                  fill="red"
+                />
+              </g>
+            </g>
+            <g
+              id="Groupe_40"
+              data-name="Groupe 40"
+              transform="translate(9.222 8.623)"
+            >
+              <g id="Groupe_39" data-name="Groupe 39">
+                <path
+                  id="Tracé_62"
+                  data-name="Tracé 62"
+                  d="M146.572,123.116a3.792,3.792,0,1,0,3.77,3.792A3.785,3.785,0,0,0,146.572,123.116Zm0,5.515a1.724,1.724,0,1,1,1.714-1.724A1.72,1.72,0,0,1,146.572,128.631Z"
+                  transform="translate(-142.802 -123.116)"
+                  fill="red"
+                />
+              </g>
+            </g>
+            <g
+              id="Groupe_42"
+              data-name="Groupe 42"
+              transform="translate(17.447 19.654)"
+            >
+              <g id="Groupe_41" data-name="Groupe 41">
+                <path
+                  id="Tracé_63"
+                  data-name="Tracé 63"
+                  d="M264.692,280.61a3.792,3.792,0,1,0,3.77,3.792A3.785,3.785,0,0,0,264.692,280.61Zm0,5.515a1.724,1.724,0,1,1,1.714-1.724A1.721,1.721,0,0,1,264.692,286.125Z"
+                  transform="translate(-260.922 -280.61)"
+                  fill="red"
+                />
+              </g>
+            </g>
+          </svg>
+          <figcaption>Les promos</figcaption>
+        </figure>
+        <div class="fontpixagramlogo">
+          <img
+            class="pixagramlogonav"
+            src="./images-icones/svg/logopixagram.svg"
+            alt="Logo Pixagram"
+          />
+          <h1>Pixagram</h1>
+        </div>
+        <figure class="searchfigure">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+          >
+            <g id="Groupe_117" data-name="Groupe 117">
+              <path
+                id="Tracé_185"
+                data-name="Tracé 185"
+                d="M31.8,30.862l-9.737-9.737a12.715,12.715,0,1,0-.943.943L30.862,31.8a.667.667,0,1,0,.943-.943ZM12.667,24A11.333,11.333,0,1,1,24,12.667,11.346,11.346,0,0,1,12.667,24Z"
+                transform="translate(0 0)"
+              />
+            </g>
+          </svg>
+          <figcaption>Recherche</figcaption>
+        </figure>
+        <div class="righticonheader">
+          <figure class="myaccountfigure">
+            <svg
+              class="accountsvg"
+              xmlns="http://www.w3.org/2000/svg"
+              width="30.312"
+              height="31.711"
+              viewBox="0 0 30.312 31.711"
+            >
+              <g id="user" transform="translate(0)">
+                <g
+                  id="Groupe_32"
+                  data-name="Groupe 32"
+                  transform="translate(0 15.896)"
+                >
+                  <g id="Groupe_31" data-name="Groupe 31">
+                    <path
+                      id="Tracé_58"
+                      data-name="Tracé 58"
+                      d="M26.484,257.323a15.173,15.173,0,0,0-15.156,15.156.659.659,0,1,0,1.318,0,13.838,13.838,0,0,1,27.676,0,.659.659,0,1,0,1.318,0A15.172,15.172,0,0,0,26.484,257.323Z"
+                      transform="translate(-11.328 -257.323)"
+                    />
                   </g>
                 </g>
-              </svg>
-              <figcaption class="myaccounttext">Mon compte</figcaption>
-            </figure>
-            <figure class="mybagfigure">
-                <svg class="mybagsvg" xmlns="http://www.w3.org/2000/svg" width="26.131" height="30.834" viewBox="0 0 26.131 30.834">
-                    <g id="shopping-bag" transform="translate(0)">
-                      <g id="Groupe_14" data-name="Groupe 14" transform="translate(9.376)">
-                        <g id="Groupe_13" data-name="Groupe 13">
-                          <path id="Tracé_49" data-name="Tracé 49" d="M84.68,3.81a4.443,4.443,0,0,0-7.987-1.986.522.522,0,1,0,.844.616,3.4,3.4,0,0,1,6.108,1.517.523.523,0,0,0,.517.449.56.56,0,0,0,.074-.005A.523.523,0,0,0,84.68,3.81Z" transform="translate(-76.593)"/>
-                        </g>
-                      </g>
-                      <g id="Groupe_16" data-name="Groupe 16" transform="translate(1.045 6.794)">
-                        <g id="Groupe_15" data-name="Groupe 15">
-                          <path id="Tracé_50" data-name="Tracé 50" d="M46.151,47.239l-1.568-2.613a.522.522,0,0,0-.448-.254h-1.5a.523.523,0,1,0,0,1.045h1.207l.941,1.568H23.631l.941-1.568h.553a.523.523,0,1,0,0-1.045h-.849a.522.522,0,0,0-.448.254l-1.568,2.613a.523.523,0,0,0,.448.792h23a.523.523,0,0,0,.448-.792Z" transform="translate(-22.185 -44.372)"/>
-                        </g>
-                      </g>
-                      <g id="Groupe_18" data-name="Groupe 18" transform="translate(13.778 2.928)">
-                        <g id="Groupe_17" data-name="Groupe 17">
-                          <path id="Tracé_51" data-name="Tracé 51" d="M113.972,21.039a.522.522,0,0,0-.325-.233l-7.124-1.666a.522.522,0,0,0-.628.39l-.537,2.3a.523.523,0,0,0,1.018.238l.418-1.788L112.9,21.7l-.96,4.1a.522.522,0,0,0,.39.628.528.528,0,0,0,.12.014.522.522,0,0,0,.508-.4l1.079-4.611A.521.521,0,0,0,113.972,21.039Z" transform="translate(-105.343 -19.126)"/>
-                        </g>
-                      </g>
-                      <g id="Groupe_20" data-name="Groupe 20" transform="translate(3.083 1.588)">
-                        <g id="Groupe_19" data-name="Groupe 19">
-                          <path id="Tracé_52" data-name="Tracé 52" d="M45.753,14.862l-.476-4.028a.523.523,0,0,0-.58-.458L35.955,11.41a.523.523,0,0,0-.457.58l.794,6.717a.523.523,0,0,0,.518.461.571.571,0,0,0,.062,0,.523.523,0,0,0,.457-.58l-.733-6.2,7.7-.91.415,3.509a.523.523,0,0,0,1.038-.122Z" transform="translate(-35.494 -10.374)"/>
-                        </g>
-                      </g>
-                      <g id="Groupe_22" data-name="Groupe 22" transform="translate(6.988 5.017)">
-                        <g id="Groupe_21" data-name="Groupe 21">
-                          <path id="Tracé_53" data-name="Tracé 53" d="M71.484,37.483l-1.037-4.314a.522.522,0,0,0-.63-.386L61.4,34.808a.523.523,0,0,0-.386.63l.518,2.156a.523.523,0,1,0,1.016-.244l-.4-1.648,7.4-1.78.915,3.805a.523.523,0,0,0,1.017-.245Z" transform="translate(-60.997 -32.769)"/>
-                        </g>
-                      </g>
-                      <g id="Groupe_24" data-name="Groupe 24" transform="translate(0 9.407)">
-                        <g id="Groupe_23" data-name="Groupe 23">
-                          <path id="Tracé_54" data-name="Tracé 54" d="M40.444,61.937a.523.523,0,0,0-.522-.5h-23a.523.523,0,0,0-.522.5L15.359,82.319a.522.522,0,0,0,.522.549H40.967a.522.522,0,0,0,.522-.549ZM16.431,81.823l.992-19.337h22l.992,19.337Z" transform="translate(-15.359 -61.441)"/>
-                        </g>
-                      </g>
-                      <g id="Groupe_26" data-name="Groupe 26" transform="translate(15.417 11.497)">
-                        <g id="Groupe_25" data-name="Groupe 25">
-                          <path id="Tracé_55" data-name="Tracé 55" d="M117.62,75.093a1.568,1.568,0,1,0,1.568,1.568A1.569,1.569,0,0,0,117.62,75.093Zm0,2.091a.523.523,0,1,1,.523-.523A.523.523,0,0,1,117.62,77.184Z" transform="translate(-116.052 -75.093)"/>
-                        </g>
-                      </g>
-                      <g id="Groupe_28" data-name="Groupe 28" transform="translate(7.578 11.497)">
-                        <g id="Groupe_27" data-name="Groupe 27">
-                          <path id="Tracé_56" data-name="Tracé 56" d="M66.42,75.093a1.568,1.568,0,1,0,1.568,1.568A1.569,1.569,0,0,0,66.42,75.093Zm0,2.091a.523.523,0,1,1,.523-.523A.523.523,0,0,1,66.42,77.184Z" transform="translate(-64.852 -75.093)"/>
-                        </g>
-                      </g>
-                      <g id="Groupe_30" data-name="Groupe 30" transform="translate(8.623 13.065)">
-                        <g id="Groupe_29" data-name="Groupe 29">
-                          <path id="Tracé_57" data-name="Tracé 57" d="M80.041,85.333H80a.523.523,0,0,0-.523.523.517.517,0,0,0,.04.2V88.73a3.4,3.4,0,1,1-6.794,0V85.856a.523.523,0,0,0-1.045,0V88.73a4.442,4.442,0,0,0,8.884,0V85.856A.523.523,0,0,0,80.041,85.333Z" transform="translate(-71.679 -85.333)"/>
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                  <figcaption class="mybagtext">Mon panier</figcaption>
-                </figure>
-            </div>
-            </div>
-        <nav>
-            <ul>
-                <li>Album Photo</li>
-                <li>Tirage Photo</li>
-                <li>Calendrier Photo</li>
-                <li>Déco Photo</li>
-                <li>Faire-part et Cartes</li>
-                <li>Objets Photo</li>
-            </ul>
-        </nav>
+                <g
+                  id="Groupe_34"
+                  data-name="Groupe 34"
+                  transform="translate(7.907)"
+                >
+                  <g id="Groupe_33" data-name="Groupe 33">
+                    <path
+                      id="Tracé_59"
+                      data-name="Tracé 59"
+                      d="M146.576,0a7.248,7.248,0,1,0,7.248,7.248A7.257,7.257,0,0,0,146.576,0Zm0,13.179a5.931,5.931,0,1,1,5.93-5.931A5.938,5.938,0,0,1,146.576,13.179Z"
+                      transform="translate(-139.328 0)"
+                    />
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <figcaption class="myaccounttext">Mon compte</figcaption>
+          </figure>
+          <figure class="mybagfigure">
+            <svg
+              class="mybagsvg"
+              xmlns="http://www.w3.org/2000/svg"
+              width="26.131"
+              height="30.834"
+              viewBox="0 0 26.131 30.834"
+            >
+              <g id="shopping-bag" transform="translate(0)">
+                <g
+                  id="Groupe_14"
+                  data-name="Groupe 14"
+                  transform="translate(9.376)"
+                >
+                  <g id="Groupe_13" data-name="Groupe 13">
+                    <path
+                      id="Tracé_49"
+                      data-name="Tracé 49"
+                      d="M84.68,3.81a4.443,4.443,0,0,0-7.987-1.986.522.522,0,1,0,.844.616,3.4,3.4,0,0,1,6.108,1.517.523.523,0,0,0,.517.449.56.56,0,0,0,.074-.005A.523.523,0,0,0,84.68,3.81Z"
+                      transform="translate(-76.593)"
+                    />
+                  </g>
+                </g>
+                <g
+                  id="Groupe_16"
+                  data-name="Groupe 16"
+                  transform="translate(1.045 6.794)"
+                >
+                  <g id="Groupe_15" data-name="Groupe 15">
+                    <path
+                      id="Tracé_50"
+                      data-name="Tracé 50"
+                      d="M46.151,47.239l-1.568-2.613a.522.522,0,0,0-.448-.254h-1.5a.523.523,0,1,0,0,1.045h1.207l.941,1.568H23.631l.941-1.568h.553a.523.523,0,1,0,0-1.045h-.849a.522.522,0,0,0-.448.254l-1.568,2.613a.523.523,0,0,0,.448.792h23a.523.523,0,0,0,.448-.792Z"
+                      transform="translate(-22.185 -44.372)"
+                    />
+                  </g>
+                </g>
+                <g
+                  id="Groupe_18"
+                  data-name="Groupe 18"
+                  transform="translate(13.778 2.928)"
+                >
+                  <g id="Groupe_17" data-name="Groupe 17">
+                    <path
+                      id="Tracé_51"
+                      data-name="Tracé 51"
+                      d="M113.972,21.039a.522.522,0,0,0-.325-.233l-7.124-1.666a.522.522,0,0,0-.628.39l-.537,2.3a.523.523,0,0,0,1.018.238l.418-1.788L112.9,21.7l-.96,4.1a.522.522,0,0,0,.39.628.528.528,0,0,0,.12.014.522.522,0,0,0,.508-.4l1.079-4.611A.521.521,0,0,0,113.972,21.039Z"
+                      transform="translate(-105.343 -19.126)"
+                    />
+                  </g>
+                </g>
+                <g
+                  id="Groupe_20"
+                  data-name="Groupe 20"
+                  transform="translate(3.083 1.588)"
+                >
+                  <g id="Groupe_19" data-name="Groupe 19">
+                    <path
+                      id="Tracé_52"
+                      data-name="Tracé 52"
+                      d="M45.753,14.862l-.476-4.028a.523.523,0,0,0-.58-.458L35.955,11.41a.523.523,0,0,0-.457.58l.794,6.717a.523.523,0,0,0,.518.461.571.571,0,0,0,.062,0,.523.523,0,0,0,.457-.58l-.733-6.2,7.7-.91.415,3.509a.523.523,0,0,0,1.038-.122Z"
+                      transform="translate(-35.494 -10.374)"
+                    />
+                  </g>
+                </g>
+                <g
+                  id="Groupe_22"
+                  data-name="Groupe 22"
+                  transform="translate(6.988 5.017)"
+                >
+                  <g id="Groupe_21" data-name="Groupe 21">
+                    <path
+                      id="Tracé_53"
+                      data-name="Tracé 53"
+                      d="M71.484,37.483l-1.037-4.314a.522.522,0,0,0-.63-.386L61.4,34.808a.523.523,0,0,0-.386.63l.518,2.156a.523.523,0,1,0,1.016-.244l-.4-1.648,7.4-1.78.915,3.805a.523.523,0,0,0,1.017-.245Z"
+                      transform="translate(-60.997 -32.769)"
+                    />
+                  </g>
+                </g>
+                <g
+                  id="Groupe_24"
+                  data-name="Groupe 24"
+                  transform="translate(0 9.407)"
+                >
+                  <g id="Groupe_23" data-name="Groupe 23">
+                    <path
+                      id="Tracé_54"
+                      data-name="Tracé 54"
+                      d="M40.444,61.937a.523.523,0,0,0-.522-.5h-23a.523.523,0,0,0-.522.5L15.359,82.319a.522.522,0,0,0,.522.549H40.967a.522.522,0,0,0,.522-.549ZM16.431,81.823l.992-19.337h22l.992,19.337Z"
+                      transform="translate(-15.359 -61.441)"
+                    />
+                  </g>
+                </g>
+                <g
+                  id="Groupe_26"
+                  data-name="Groupe 26"
+                  transform="translate(15.417 11.497)"
+                >
+                  <g id="Groupe_25" data-name="Groupe 25">
+                    <path
+                      id="Tracé_55"
+                      data-name="Tracé 55"
+                      d="M117.62,75.093a1.568,1.568,0,1,0,1.568,1.568A1.569,1.569,0,0,0,117.62,75.093Zm0,2.091a.523.523,0,1,1,.523-.523A.523.523,0,0,1,117.62,77.184Z"
+                      transform="translate(-116.052 -75.093)"
+                    />
+                  </g>
+                </g>
+                <g
+                  id="Groupe_28"
+                  data-name="Groupe 28"
+                  transform="translate(7.578 11.497)"
+                >
+                  <g id="Groupe_27" data-name="Groupe 27">
+                    <path
+                      id="Tracé_56"
+                      data-name="Tracé 56"
+                      d="M66.42,75.093a1.568,1.568,0,1,0,1.568,1.568A1.569,1.569,0,0,0,66.42,75.093Zm0,2.091a.523.523,0,1,1,.523-.523A.523.523,0,0,1,66.42,77.184Z"
+                      transform="translate(-64.852 -75.093)"
+                    />
+                  </g>
+                </g>
+                <g
+                  id="Groupe_30"
+                  data-name="Groupe 30"
+                  transform="translate(8.623 13.065)"
+                >
+                  <g id="Groupe_29" data-name="Groupe 29">
+                    <path
+                      id="Tracé_57"
+                      data-name="Tracé 57"
+                      d="M80.041,85.333H80a.523.523,0,0,0-.523.523.517.517,0,0,0,.04.2V88.73a3.4,3.4,0,1,1-6.794,0V85.856a.523.523,0,0,0-1.045,0V88.73a4.442,4.442,0,0,0,8.884,0V85.856A.523.523,0,0,0,80.041,85.333Z"
+                      transform="translate(-71.679 -85.333)"
+                    />
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <figcaption class="mybagtext">Mon panier</figcaption>
+          </figure>
+        </div>
+      </div>
+      <nav>
+        <div class="lowheader">
+          <ul>
+            <li>Album Photo</li>
+            <li>Tirage Photo</li>
+            <li>Calendrier Photo</li>
+            <li>Déco Photo</li>
+            <li>Faire-part et Cartes</li>
+            <li>Objets Photo</li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section class="hero-image">
-            <div class="hero-text">
-                <p>Participez à notre concours photo !</p>
-                <p>Mettez en scène vos albums Pixagram de façon originale !</p>
-                <p>La photo la plus likée apparaîtra dans nos pages produit. Le gagnant aura aussi le droit à des
-                    réductions de -30% pendant 3 mois sur ses commandes.</p>
-                <button>Ça m'intéresse !</button>
-        </section>
+      <section class="hero-image">
+        <div class="hero-text">
+          <p>Participez à notre concours photo !</p>
+          <p>Mettez en scène vos albums Pixagram de façon originale !</p>
+          <p>
+            La photo la plus likée apparaîtra dans nos pages produit. Le gagnant
+            aura aussi le droit à des réductions de -30% pendant 3 mois sur ses
+            commandes.
+          </p>
         </div>
-        </section>
-        <section class="firstsection">
-            <h2>Vos options photo</h2>
-            <article class="image-photoalbum">
-                <button class="photoalbumbutton">Album Photo</button>
-            </article>
-            <article class="image-photoprinting">
-                <button class="photoprintingbutton">Tirage Photo</button>
-            </article>
-            <article class="image-photocalendar">
-                <button class="photocalendarbutton">Calendrier Photo</button>
-            </article>
-            <article class="image-photodeco">
-                <button class="photodecobutton">Déco Photo</button>
-            </article>
-            <article class="image-photoshareandcards">
-                <button class="photoshareandcardsbutton">Faire part et cartes</button>
-            </article>
-            <article class="image-photoobjects">
-                <button class="photoobjectsbutton">Objets Photo</button>
-            </article>
-            <a href="">Voir tous nos produits</a>
-        </section>
-        <section class="sectiontwo">
-            <h2>Les tendances clients</h2>
-            <article>
-                <h3>Des supports nostalgiques</h3>
-                <p>Revivez vos meilleurs moments avec nos photos au format polaroid. Cela apportera une touche retro à
-                    vos souvenirs.
-                    Nous vous proposons aussi des filtres vintage apportant une atmosphère chaleureuse.
-                </p>
-                <img class="nostalgicphotos" src="images-icones/img/photopolaroid.jpg" alt="Photos polaroid accrochées sur un fil par des épingles à linge">
-            <a href="">En savoir plus</a>
-            </article>
-            <article>
-                <h3>Imprimez vos photos Insta !</h3>
-                <p>Imprimez vos photos depuis Instagram. Mettez les en valeur sur un autre format et soyez-en fiers,
-                    elles sont superbes !
-                    Grâce à nos outils vous pourrez les retoucher et ajuster les couleurs pour un format papier.</p>
-                <img class="instaprinting" src="images-icones/img/instaprint.jpg" alt="Photo d'une main tenant un smartophone affichant un compte instagram">
-                <a href="">En savoir plus</a>
-            </article>
-        </section>
-        <section class="sectiontree">
-            <h2>Nos avis clients</h2>
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="590" height="391" viewBox="0 0 590 391">
-                <defs>
-                  <filter id="Rectangle_4" x="0" y="0" width="590" height="391" filterUnits="userSpaceOnUse">
-                    <feOffset dy="3" input="SourceAlpha"/>
-                    <feGaussianBlur stdDeviation="3" result="blur"/>
-                    <feFlood flood-opacity="0.161"/>
-                    <feComposite operator="in" in2="blur"/>
-                    <feComposite in="SourceGraphic"/>
-                  </filter>
-                </defs>
-                <g id="Citation_avisclients" transform="translate(9 6)">
-                  <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Rectangle_4)">
-                    <g id="Rectangle_4-2" data-name="Rectangle 4" transform="translate(9 6)" fill="#fff" stroke="#707070" stroke-width="0.5">
-                      <rect width="572" height="373" stroke="none"/>
-                      <rect x="0.25" y="0.25" width="571.5" height="372.5" fill="none"/>
-                    </g>
-                  </g>
-                  <text id="_" data-name="&quot;" transform="translate(49 53)" fill="#00cdc6" font-size="80" font-family="Poppins-Italic, Poppins" font-style="italic"><tspan x="0" y="84">&quot;</tspan></text>
-                  <text id="_2" data-name="&quot;" transform="translate(490 227)" fill="#00cdc6" font-size="80" font-family="Poppins-Italic, Poppins" font-style="italic"><tspan x="0" y="84">&quot;</tspan></text>
-                  <text id="Des_prestations_toujours_excellentes_en_termes_de_produits_de_choix_de_régularité_dans_les_livraisons_et_de_disponibilité_si_problème._Bravo_aux_équipes_" data-name="Des prestations toujours excellentes en termes de produits, de choix, de régularité dans les livraisons et de disponibilité si problème. Bravo aux équipes !!" transform="translate(98 99)" font-size="20" font-family="Poppins-Regular, Poppins"><tspan x="0" y="21">Des prestations toujours excellentes en </tspan><tspan x="0" y="51">termes de produits, de choix, de </tspan><tspan x="0" y="81">régularité dans les livraisons et de </tspan><tspan x="0" y="111">disponibilité si problème. Bravo aux </tspan><tspan x="0" y="141">équipes !!</tspan></text>
-                  <text id="Pierre_G._le_21_11_2020" data-name="Pierre G. le 21/11/2020" transform="translate(187 284)" font-size="18" font-family="Poppins-Regular, Poppins"><tspan x="0" y="19">Pierre G. </tspan><tspan y="19" font-family="Poppins-Italic, Poppins" font-style="italic">le 21/11/2020</tspan></text>
-                </g>
-              </svg>              
-        </section>
-        <section class="sectionfour">
-            <h2>Nos valeurs</h2>
-            <article><p>Pixagram vous garantie une impression photo de qualité. Nous renouvelons fréquemment notre matériel pour vous apporter une expérience photo optimale.</p></article>
-            <figure>
-                <svg class="franceicon" xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66">
-        <rect id="Rectangle_71" data-name="Rectangle 71" width="66" height="65.999" fill="#302e2e" opacity="0"/>
-        <g id="Page-1" transform="translate(0 0)">
-          <g id="_001---France" data-name="001---France">
-            <path id="Shape" d="M61.49,45.608c-1.87-3.74-1.167-5.47.893-7.53a8.887,8.887,0,0,0,2.244-7.57,4.041,4.041,0,0,0-2.674-3.051,8.873,8.873,0,0,0-3.3-.537,6.307,6.307,0,0,1,2.457-3C64.579,21.6,64.9,21.28,64.9,17.5a21.992,21.992,0,0,1,.794-5.4,2.181,2.181,0,0,0-1.344-2.62,45.508,45.508,0,0,0-6.93-1.86,44.292,44.292,0,0,0-6.942-.635c-3.254-.125-6.326-.244-8.063-1.4a5.838,5.838,0,0,1-2.243-2.6A2.835,2.835,0,0,0,37.4,1c-2.107,0-7.7,0-7.7,5.5,0,.89-.086,1.1-2.337,1.1-1.7,0-4.224,0-5.161,2.489a12.98,12.98,0,0,1-4.6.811,2.186,2.186,0,0,1-1.972-.778A4.308,4.308,0,0,0,12.1,8.7,2.169,2.169,0,0,0,9.994,9.715c-.687,1.268.346,2.852,1.337,4.383a11.059,11.059,0,0,1,.77,1.283c0,1.1-.053,2.119-2.2,2.119a4.62,4.62,0,0,1-2.682-.834A8.792,8.792,0,0,0,2.2,15.3C0,15.3,0,18.27,0,19.7c0,4.545,2.991,5.5,5.5,5.5,3.351,0,5.39,2.122,7.781,8.109a27.988,27.988,0,0,1,1.449,5.208c.507,2.515.945,4.686,3.363,6.3.77.511.88,2.11.286,4.07C17.391,52.149,15.022,54.9,13.2,54.9c-.955,0-1.815-.054-2.575-.1-1.928-.122-3.318-.209-4.28.722A3.527,3.527,0,0,0,5.5,58.231c.11,3.786,9.68,5.468,13.3,5.468a57.922,57.922,0,0,1,9.1,1.489C32.169,66.078,36.583,67,39.6,67c4,0,5.857-.55,6.416-1.9.6-1.442-.784-2.824-1.239-3.278-.622-.621-.395-1.792.11-2.676a3.972,3.972,0,0,1,4.349-2.079c3.583.9,5.3,1.157,6.644.44A6.227,6.227,0,0,0,60.5,59.3c3.611,0,5.5-3.321,5.5-6.6a4.316,4.316,0,0,0-1.7-3.253,13.267,13.267,0,0,1-2.813-3.839ZM7.7,58.168c-.024-.835.14-1.036.174-1.068a1.9,1.9,0,0,1,1.059-.176c.469,0,1.027.035,1.553.068.792.051,1.691.11,2.714.11,3.24,0,6.17-3.9,7.282-7.577.922-3.045.5-5.427-1.172-6.538s-1.949-2.53-2.42-4.9a30.311,30.311,0,0,0-1.563-5.592C12.98,26.63,10.519,23,5.5,23c-2.9,0-3.3-1.586-3.3-3.3a6.887,6.887,0,0,1,.206-2.2,6.571,6.571,0,0,1,3.712,1.07A6.79,6.79,0,0,0,9.9,19.7c2.919,0,4.4-1.481,4.4-4.4a4.937,4.937,0,0,0-1.123-2.4,13.393,13.393,0,0,1-1.143-2H12.1a2.186,2.186,0,0,1,1.972.778A4.308,4.308,0,0,0,17.6,13.1a14.441,14.441,0,0,0,5.992-1.21,1.1,1.1,0,0,0,.575-.717c.31-1.25,1.168-1.373,3.2-1.373H27.5V62.858A52.081,52.081,0,0,0,18.8,61.5c-5.061,0-11.063-2.2-11.1-3.331Zm35.267-.11c-1.112,1.963-1.013,4.05.253,5.315a3.436,3.436,0,0,1,.7.892c-.266.162-1.21.53-4.326.53a57.242,57.242,0,0,1-9.9-1.484V9.58A2.813,2.813,0,0,0,31.9,6.5c0-2.75,2.1-3.3,5.5-3.3.42,0,.42,0,.8.77a8.03,8.03,0,0,0,2.986,3.448A12.813,12.813,0,0,0,47.3,9.03V54.871a6.5,6.5,0,0,0-4.331,3.191ZM60.5,57.1a4.084,4.084,0,0,1-3.049-1.129,2.177,2.177,0,0,0-2.571-.406c-.628.33-1.918.166-5.113-.632-.091-.023-.177-.023-.267-.041V9.15l.888.036a42.942,42.942,0,0,1,6.6.592,45.449,45.449,0,0,1,6.586,1.752A24.209,24.209,0,0,0,62.7,17.5c0,2.711,0,2.711-2.81,4.585A8.186,8.186,0,0,0,56.1,28.5a1.112,1.112,0,0,0,.65,1.042,1.042,1.042,0,0,0,1.17-.212c.009-.007.868-.607,3.332.22a1.845,1.845,0,0,1,1.228,1.463,6.785,6.785,0,0,1-1.658,5.51c-2.538,2.538-3.731,5.221-1.307,10.069A15.4,15.4,0,0,0,62.747,51c.817.817,1.053,1.08,1.053,1.7C63.8,54.221,63.11,57.1,60.5,57.1Z" transform="translate(0 -0.999)" fill="#00cdc6"/>
-          </g>
-        </g>
-                </svg><figcaption>100% Made in France</figcaption>
-            </figure>
-            <figure>
-                <svg class="qualityicon" xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66">
-        <g id="Rectangle_44" data-name="Rectangle 44" fill="#fff" stroke="#707070" stroke-width="1" opacity="0">
-          <rect width="66" height="66" stroke="none"/>
-          <rect x="0.5" y="0.5" width="65" height="65" fill="none"/>
-        </g>
-        <g id="medal" transform="translate(7.605)">
-          <g id="Groupe_54" data-name="Groupe 54">
-            <g id="Groupe_53" data-name="Groupe 53">
-              <path id="Tracé_97" data-name="Tracé 97" d="M100.378,39.782l4.563-3.625-.026-5.859,2.539-5.275-2.527-5.275.026-5.859-4.563-3.638-2.5-5.288L92.218,3.677,87.681,0,82.009,1.338,76.35,0,71.813,3.677,66.141,4.963l-2.5,5.288-4.576,3.638.026,5.859L56.55,25.023,59.089,30.3l-.026,5.859,4.563,3.638,1.83,3.885L58.045,59.7l8.779-1.351L71.439,66l7.683-16.617L82,48.707l2.269.533L92.025,66l4.615-7.652,8.779,1.351L98.264,44.238ZM71.194,61.492l-3.3-5.47-6.265.961,5.414-11.719,4.77,1.078L76.35,50.02Zm10.815-14.98-5.143,1.221-4.112-3.339L67.6,43.225l-2.269-4.807-4.151-3.3.026-5.327L58.9,25.01,61.2,20.216l-.026-5.327,4.151-3.3L67.6,6.782l5.156-1.169,4.112-3.339,5.143,1.208,5.143-1.208,4.112,3.339,5.156,1.169,2.269,4.807,4.151,3.3-.026,5.327L105.122,25l-2.307,4.781.026,5.327-4.151,3.3-2.269,4.807-5.156,1.169L87.152,47.72ZM101.835,57l-6.265-.961-3.3,5.457L86.882,49.851l.786.182,4.538-3.677,4.267-.961Z" transform="translate(-56.55)" fill="#00cdc6"/>
-            </g>
-          </g>
-          <g id="Groupe_56" data-name="Groupe 56" transform="translate(7.193 6.613)">
-            <g id="Groupe_55" data-name="Groupe 55">
-              <path id="Tracé_98" data-name="Tracé 98" d="M130.616,50.9a18.41,18.41,0,1,0,18.266,18.41A18.365,18.365,0,0,0,130.616,50.9Zm0,34.689A16.28,16.28,0,1,1,146.768,69.31,16.233,16.233,0,0,1,130.616,85.589Z" transform="translate(-112.35 -50.9)" fill="#00cdc6"/>
-            </g>
-          </g>
-          <g id="Groupe_58" data-name="Groupe 58" transform="translate(11.73 10.472)">
-            <g id="Groupe_57" data-name="Groupe 57">
-              <path id="Tracé_99" data-name="Tracé 99" d="M175.007,90.656H164.514L161.279,80.6l-3.236,10.056H147.55l8.482,6.21L152.8,106.922l8.482-6.21,8.482,6.21-3.236-10.056Zm-13.729,7.418-4.473,3.274,1.7-5.3-4.473-3.274h5.517l1.7-5.3,1.7,5.3h5.517L164,96.048l1.753,5.3Z" transform="translate(-147.55 -80.6)" fill="#00cdc6"/>
-            </g>
-          </g>
-        </g>
-                </svg><figcaption>30 ans d'activité et de qualité</figcaption>
-            </figure>
-            <figure>
-                <svg class="customer-serviceicon" xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66">
-        <rect id="Rectangle_48" data-name="Rectangle 48" width="66" height="66" fill="#fff" opacity="0"/>
-        <path id="customer-service" d="M67.814,34.26l-3.2-2.245a28.241,28.241,0,0,0-56.461,0L4.962,34.26a.938.938,0,0,0-.4.767V45a.937.937,0,0,0,.395.763l3.58,2.559a.938.938,0,0,0,.543.176h3.565a.938.938,0,0,0,.937-.937V32.573c0-.013,0-.026,0-.039a22.8,22.8,0,1,1,45.6,0,.383.383,0,0,0,.007.1V47.554a.938.938,0,0,0,.937.937h.845v1.08a5.974,5.974,0,0,1-5.06,5.891,21.226,21.226,0,0,0,1.808-8.585V33.143a21.34,21.34,0,1,0-42.68,0V46.88A21.332,21.332,0,0,0,54.931,57.416h.075a7.853,7.853,0,0,0,7.843-7.845V48.493h.845a.938.938,0,0,0,.545-.175l3.58-2.559A.937.937,0,0,0,68.212,45V35.027a.938.938,0,0,0-.4-.767ZM36.383,13.672A19.493,19.493,0,0,1,55.849,33.143V38.19a19.115,19.115,0,0,1-18.655-9.53.937.937,0,0,0-1.621,0,19.115,19.115,0,0,1-18.655,9.53V33.143A19.493,19.493,0,0,1,36.384,13.672Zm0,52.68A19.493,19.493,0,0,1,16.918,46.88V40.074c.65.059,1.3.1,1.955.1a21.25,21.25,0,0,0,17.509-9.284A21.25,21.25,0,0,0,53.9,40.175c.653,0,1.305-.041,1.955-.1V46.88a19.354,19.354,0,0,1-2.041,8.662H45.022a3.057,3.057,0,0,0-2.9-2.116H38.405a3.053,3.053,0,0,0,0,6.106h3.712a3.057,3.057,0,0,0,2.9-2.117H52.74a19.459,19.459,0,0,1-16.357,8.936Zm6.907-9.815a1.178,1.178,0,0,1-1.173,1.122H38.405a1.178,1.178,0,0,1,0-2.357h3.712a1.178,1.178,0,0,1,1.173,1.122c0,.019-.006.037-.006.057S43.289,56.517,43.291,56.537ZM11.708,46.619H9.381l-2.945-2.1v-9l2.939-2.063h2.332ZM36.384,8.324A24.82,24.82,0,0,0,11.75,31.578H10.036a26.375,26.375,0,0,1,52.694,0H61.018A24.82,24.82,0,0,0,36.384,8.32ZM66.338,44.517l-2.945,2.1H61.066V33.452H63.4l2.939,2.063Z" transform="translate(-3.343 -2.227)" fill="#00cdc6"/>
-                </svg><figcaption>Un service client à votre écoute</figcaption>
-            </figure>
-            <figure>
-                <svg class="creativetoolsicon" xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66">
-        <g id="Rectangle_47" data-name="Rectangle 47" fill="#fff" stroke="#707070" stroke-width="1" opacity="0">
-          <rect width="66" height="66" stroke="none"/>
-          <rect x="0.5" y="0.5" width="65" height="65" fill="none"/>
-        </g>
-        <g id="paint-palette-and-brush" transform="translate(0.88 5.28)">
-          <path id="Tracé_111" data-name="Tracé 111" d="M50.643,206.386a5.32,5.32,0,0,0-3.285-1.141,5.265,5.265,0,0,0-4.123,1.968,5.218,5.218,0,0,0,.837,7.374,5.318,5.318,0,0,0,3.284,1.141,5.262,5.262,0,0,0,4.124-1.97,5.218,5.218,0,0,0-.837-7.372Zm-1.036,5.865a2.895,2.895,0,0,1-4.043.45,2.814,2.814,0,0,1-.455-3.981,2.9,2.9,0,0,1,4.044-.448,2.813,2.813,0,0,1,.455,3.979Z" transform="translate(-33.649 -167.433)" fill="#00cdc6"/>
-          <path id="Tracé_112" data-name="Tracé 112" d="M169.226,107.64a5.272,5.272,0,0,0,4.976-3.521,5.174,5.174,0,0,0-.233-4,5.294,5.294,0,0,0-7.04-2.448,5.222,5.222,0,0,0-2.463,7A5.32,5.32,0,0,0,169.226,107.64Zm-2.723-6.17a2.824,2.824,0,0,1,1.462-1.626,2.89,2.89,0,0,1,3.842,1.328,2.788,2.788,0,0,1,.126,2.153,2.83,2.83,0,0,1-1.462,1.627,2.871,2.871,0,0,1-1.245.283,2.9,2.9,0,0,1-2.6-1.614A2.785,2.785,0,0,1,166.5,101.471Z" transform="translate(-131.094 -81)" fill="#00cdc6"/>
-          <path id="Tracé_113" data-name="Tracé 113" d="M108.641,65.771a5.346,5.346,0,0,0,1.176.132,5.242,5.242,0,0,0,5.142-4.072,5.187,5.187,0,0,0-.672-3.943,5.241,5.241,0,0,0-3.3-2.333,5.343,5.343,0,0,0-1.181-.133,5.237,5.237,0,0,0-5.136,4.074,5.174,5.174,0,0,0,.668,3.943A5.234,5.234,0,0,0,108.641,65.771Zm-1.63-5.737a2.845,2.845,0,0,1,2.793-2.209,2.937,2.937,0,0,1,.649.073,2.854,2.854,0,0,1,1.8,1.269,2.8,2.8,0,0,1,.364,2.125,2.885,2.885,0,0,1-2.8,2.206,2.943,2.943,0,0,1-.647-.073,2.847,2.847,0,0,1-1.8-1.267A2.788,2.788,0,0,1,107.011,60.034Z" transform="translate(-83.591 -47.626)" fill="#00cdc6"/>
-          <path id="Tracé_114" data-name="Tracé 114" d="M43.174,84.766a5.223,5.223,0,0,0,.836-7.374,5.308,5.308,0,0,0-7.409-.829,5.219,5.219,0,0,0-.835,7.375,5.3,5.3,0,0,0,7.408.828Zm-5.535-2.335a2.815,2.815,0,0,1,.452-3.981,2.9,2.9,0,0,1,4.046.449,2.819,2.819,0,0,1-.456,3.983,2.9,2.9,0,0,1-4.042-.451Z" transform="translate(-27.676 -63.622)" fill="#00cdc6"/>
-          <path id="Tracé_115" data-name="Tracé 115" d="M64.66,25.893a1.587,1.587,0,0,0-1.163-.459c-.686,0-2.508,0-13.571,9.415l-.672.574a29.5,29.5,0,0,0-27.6-18.91h-.005A28.944,28.944,0,0,0,7.89,20.469C2.8,23.46,0,27.461,0,31.734c0,5.158,2.911,7.316,5.249,9.05,1.906,1.414,3.412,2.53,3.413,4.977s-1.5,3.562-3.409,4.975C2.915,52.468.006,54.625.008,59.784c0,4.272,2.805,8.274,7.895,11.268a28.967,28.967,0,0,0,13.77,3.964h.008a29.415,29.415,0,0,0,20.845-8.559A28.918,28.918,0,0,0,51.159,46.09c1.866-2.124,3.675-4.235,5.325-6.224,2.824-3.4,5-6.211,6.454-8.346C64.871,28.693,65.718,26.959,64.66,25.893ZM40.833,64.75a27.024,27.024,0,0,1-19.152,7.862h-.008c-7.755,0-19.259-5.39-19.261-12.829,0-3.948,2.074-5.487,4.272-7.116,2.054-1.523,4.382-3.249,4.382-6.907s-2.33-5.384-4.385-6.908c-2.2-1.631-4.275-3.171-4.277-7.119,0-4.568,4.2-7.72,6.7-9.192a26.8,26.8,0,0,1,12.545-3.625h0A27.092,27.092,0,0,1,47.31,37.1c-5.214,4.553-10.86,9.8-15.065,14.02-6.984.9-7.935,5.558-8.631,8.978-.592,2.911-.977,4.319-3.224,4.5a1.2,1.2,0,0,0-.364,2.309,22.013,22.013,0,0,0,7.6,1.464h0a12.3,12.3,0,0,0,7.135-2.016,12.418,12.418,0,0,0,4.815-7.767c2.747-2.78,5.887-6.131,8.991-9.584A26.533,26.533,0,0,1,40.833,64.75ZM37.16,58.364c-1.274,5.048-4.479,7.607-9.535,7.606h0a18.029,18.029,0,0,1-3.684-.409c1.282-1.308,1.683-3.275,2.029-4.98.661-3.247,1.285-6.32,6.4-7.05Zm16.6-18.985c-4.765,5.677-10.533,12.053-15.281,16.9l-.735-.741L34.5,52.269c4.305-4.285,9.828-9.4,14.98-13.867h0c.6-.521,1.2-1.036,1.786-1.538A92.39,92.39,0,0,1,61.978,28.58,92.615,92.615,0,0,1,53.76,39.379Z" transform="translate(0 -16.512)" fill="#00cdc6"/>
-        </g>
-                </svg> <figcaption>Des outils de création intuitifs</figcaption>
-            </figure>
-            <figure>
-                <svg class="storageicon" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75">
-        <rect id="Rectangle_49" data-name="Rectangle 49" width="75" height="75" fill="#fff" opacity="0"/>
-        <g id="upload" transform="translate(0 3)">
-          <path id="Tracé_116" data-name="Tracé 116" d="M28.375,48.5H19a3.128,3.128,0,0,1-3.125-3.125V29.751H8.062a1.564,1.564,0,0,1-1.106-2.669L22.581,11.457a1.564,1.564,0,0,1,2.209,0L40.415,27.082a1.564,1.564,0,0,1-1.1,2.669H31.5V45.376A3.128,3.128,0,0,1,28.375,48.5ZM11.834,26.626h5.6A1.563,1.563,0,0,1,19,28.188V45.376h9.375V28.188a1.563,1.563,0,0,1,1.563-1.562h5.6L23.687,14.772Z" transform="translate(13.813 20.249)" fill="#00cdc6"/>
-          <path id="Tracé_117" data-name="Tracé 117" d="M14.066,50.906a1.745,1.745,0,0,1-.178-.009,15.621,15.621,0,0,1,.663-31.109,23.415,23.415,0,0,1,43.741-6.15,18.713,18.713,0,0,1,3.066,36.619,1.563,1.563,0,0,1-.834-3.013A15.586,15.586,0,0,0,57.2,16.684a1.561,1.561,0,0,1-1.331-.9,20.288,20.288,0,0,0-38.444,5.747,1.565,1.565,0,0,1-1.547,1.344,12.5,12.5,0,0,0-1.638,24.916,1.563,1.563,0,0,1-.172,3.116Z" transform="translate(0 -1)" fill="#00cdc6"/>
-        </g>
-                </svg><figcaption>Stockage Photo en ligne</figcaption>
-            </figure>
-        </section>
-        <section class="sectionfive">
-            <h2>Qui sommes-nous ?</h2>
-            <article class="image-pixateam">
-                <button class="teamlink">L'équipe</button>
-            </article>
-            <article class="image-instagrampixa">
-                <button class="instagrampixagramlink">Notre Instagram</button>
-            </article>
-        </section>
-        <section class="sectionsix">
-            <h2>Le blog</h2>
-            <article class="blogarticle">
-                <img class="blogimg" src="images-icones/img/blog.png" alt="Image composée en 3 parties: 1 aperçu article, 1 aperçu du chat pixagram, 1 photo représentant l'équipe menant une action écologique">
-                <ul class="ulblog">
-                <li>Tenez-vous informés des dernières tendances photos</li>
-                <li>Suivez-nous dans nos engagements</li>
-                <li>Rejoignez notre communauté</li>
-            </ul>
-            <a href="">Voir le blog</a>
-            </article>
-        </section>
-        <section class="sectionseven">
-            <figure class="securepaymentfigure">
-                <figcaption>Paiement sécurisé</figcaption>
-                <img class="paymentsimg" src="images-icones/img/paiements.png" alt="paiement sécurisé avec carte bleue, mastercard, visa et paypal">                
-            </figure>
-            <figure class="deliveryfigure">
-                <figcaption>Livraison rapide, sécurisé et flexible</figcaption>
-                <img class="laposteimg" src="images-icones/img/laposte.png" alt="livraison avec la poste">
-                <img class="chronopostimg" src="images-icones/img/chronopost.png" alt="livraison avec chronopost">          
-            </figure>
-            <article>Gardons le contact !</article>
-        </section>
+        <div class="divlinkhero">
+          <a
+            href="https://www.photoservice.com/produits-photo/calendrier-photo/"
+            >Ça m'intéresse !</a
+          >
+        </div>
+      </section>
+      <section class="firstsection">
+        <h2>Vos options photo</h2>
+        <div class="firstthreepictures1">
+          <article class="image-photoalbum">
+            <button class="photoalbumbutton">Album Photo</button>
+          </article>
+          <article class="image-photoprinting">
+            <button class="photoprintingbutton">Tirage Photo</button>
+          </article>
+          <article class="image-photocalendar">
+            <button class="photocalendarbutton">Calendrier Photo</button>
+          </article>
+        </div>
+        <div class="secondthreepictures1">
+          <article class="image-photodeco">
+            <button class="photodecobutton">Déco Photo</button>
+          </article>
+          <article class="image-photoshareandcards">
+            <button class="photoshareandcardsbutton">
+              Faire part et cartes
+            </button>
+          </article>
+          <article class="image-photoobjects">
+            <button class="photoobjectsbutton">Objets Photo</button>
+          </article>
+        </div>
+        <a href="">Voir tous nos produits</a>
+      </section>
 
+      <section class="sectiontwo">
+        <h2>Les tendances clients</h2>
+        <article>
+          <h3>Des supports nostalgiques</h3>
+          <p>
+            Revivez vos meilleurs moments avec nos photos au format polaroid.
+            Cela apportera une touche retro à vos souvenirs. Nous vous proposons
+            aussi des filtres vintage apportant une atmosphère chaleureuse.
+          </p>
+          <img
+            class="nostalgicphotos"
+            src="images-icones/img/photopolaroid.jpg"
+            alt="Photos polaroid accrochées sur un fil par des épingles à linge"
+          />
+          <a href="">En savoir plus</a>
+        </article>
+        <article>
+          <h3>Imprimez vos photos Insta !</h3>
+          <p>
+            Imprimez vos photos depuis Instagram. Mettez les en valeur sur un
+            autre format et soyez-en fiers, elles sont superbes ! Grâce à nos
+            outils vous pourrez les retoucher et ajuster les couleurs pour un
+            format papier.
+          </p>
+          <img
+            class="instaprinting"
+            src="images-icones/img/instaprint.jpg"
+            alt="Photo d'une main tenant un smartophone affichant un compte instagram"
+          />
+          <a href="">En savoir plus</a>
+        </article>
+      </section>
+      <section class="sectiontree">
+        <h2>Nos avis clients</h2>
+        <div class="customeradvicediv">
+          <svg
+            class="customeradvice"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 590 391"
+          >
+            <defs>
+              <filter
+                id="Rectangle_4"
+                x="0"
+                y="0"
+                width="590"
+                height="391"
+                filterUnits="userSpaceOnUse"
+              >
+                <feOffset dy="3" input="SourceAlpha" />
+                <feGaussianBlur stdDeviation="3" result="blur" />
+                <feFlood flood-opacity="0.161" />
+                <feComposite operator="in" in2="blur" />
+                <feComposite in="SourceGraphic" />
+              </filter>
+            </defs>
+            <g id="Citation_avisclients" transform="translate(9 6)">
+              <g
+                transform="matrix(1, 0, 0, 1, -9, -6)"
+                filter="url(#Rectangle_4)"
+              >
+                <g
+                  id="Rectangle_4-2"
+                  data-name="Rectangle 4"
+                  transform="translate(9 6)"
+                  fill="#fff"
+                  stroke="#707070"
+                  stroke-width="0.5"
+                >
+                  <rect width="572" height="373" stroke="none" />
+                  <rect
+                    x="0.25"
+                    y="0.25"
+                    width="571.5"
+                    height="372.5"
+                    fill="none"
+                  />
+                </g>
+              </g>
+              <text
+                id="_"
+                data-name='"'
+                transform="translate(49 53)"
+                fill="#00cdc6"
+                font-size="80"
+                font-family="Poppins-Italic, Poppins"
+                font-style="italic"
+              >
+                <tspan x="0" y="84">&quot;</tspan>
+              </text>
+              <text
+                id="_2"
+                data-name='"'
+                transform="translate(490 227)"
+                fill="#00cdc6"
+                font-size="80"
+                font-family="Poppins-Italic, Poppins"
+                font-style="italic"
+              >
+                <tspan x="0" y="84">&quot;</tspan>
+              </text>
+              <text
+                id="Des_prestations_toujours_excellentes_en_termes_de_produits_de_choix_de_régularité_dans_les_livraisons_et_de_disponibilité_si_problème._Bravo_aux_équipes_"
+                data-name="Des prestations toujours excellentes en termes de produits, de choix, de régularité dans les livraisons et de disponibilité si problème. Bravo aux équipes !!"
+                transform="translate(98 99)"
+                font-size="20"
+                font-family="Poppins-Regular, Poppins"
+              >
+                <tspan x="0" y="21">
+                  Des prestations toujours excellentes en
+                </tspan>
+                <tspan x="0" y="51">termes de produits, de choix, de</tspan>
+                <tspan x="0" y="81">régularité dans les livraisons et de</tspan>
+                <tspan x="0" y="111">
+                  disponibilité si problème. Bravo aux
+                </tspan>
+                <tspan x="0" y="141">équipes !!</tspan>
+              </text>
+              <text
+                id="Pierre_G._le_21_11_2020"
+                data-name="Pierre G. le 21/11/2020"
+                transform="translate(187 284)"
+                font-size="18"
+                font-family="Poppins-Regular, Poppins"
+              >
+                <tspan x="0" y="19">Pierre G.</tspan>
+                <tspan
+                  y="19"
+                  font-family="Poppins-Italic, Poppins"
+                  font-style="italic"
+                >
+                  le 21/11/2020
+                </tspan>
+              </text>
+            </g>
+          </svg>
+        </div>
+      </section>
+
+      <section class="sectionfour">
+        <h2>Nos valeurs</h2>
+        <article>
+          <p>
+            Pixagram vous garantie une impression photo de qualité. Nous
+            renouvelons fréquemment notre matériel pour vous apporter une
+            expérience photo optimale.
+          </p>
+        </article>
+        <div class="valueicondiv">
+          <figure>
+            <svg
+              class="franceicon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="66"
+              height="66"
+              viewBox="0 0 66 66"
+            >
+              <rect
+                id="Rectangle_71"
+                data-name="Rectangle 71"
+                width="66"
+                height="65.999"
+                fill="#302e2e"
+                opacity="0"
+              />
+              <g id="Page-1" transform="translate(0 0)">
+                <g id="_001---France" data-name="001---France">
+                  <path
+                    id="Shape"
+                    d="M61.49,45.608c-1.87-3.74-1.167-5.47.893-7.53a8.887,8.887,0,0,0,2.244-7.57,4.041,4.041,0,0,0-2.674-3.051,8.873,8.873,0,0,0-3.3-.537,6.307,6.307,0,0,1,2.457-3C64.579,21.6,64.9,21.28,64.9,17.5a21.992,21.992,0,0,1,.794-5.4,2.181,2.181,0,0,0-1.344-2.62,45.508,45.508,0,0,0-6.93-1.86,44.292,44.292,0,0,0-6.942-.635c-3.254-.125-6.326-.244-8.063-1.4a5.838,5.838,0,0,1-2.243-2.6A2.835,2.835,0,0,0,37.4,1c-2.107,0-7.7,0-7.7,5.5,0,.89-.086,1.1-2.337,1.1-1.7,0-4.224,0-5.161,2.489a12.98,12.98,0,0,1-4.6.811,2.186,2.186,0,0,1-1.972-.778A4.308,4.308,0,0,0,12.1,8.7,2.169,2.169,0,0,0,9.994,9.715c-.687,1.268.346,2.852,1.337,4.383a11.059,11.059,0,0,1,.77,1.283c0,1.1-.053,2.119-2.2,2.119a4.62,4.62,0,0,1-2.682-.834A8.792,8.792,0,0,0,2.2,15.3C0,15.3,0,18.27,0,19.7c0,4.545,2.991,5.5,5.5,5.5,3.351,0,5.39,2.122,7.781,8.109a27.988,27.988,0,0,1,1.449,5.208c.507,2.515.945,4.686,3.363,6.3.77.511.88,2.11.286,4.07C17.391,52.149,15.022,54.9,13.2,54.9c-.955,0-1.815-.054-2.575-.1-1.928-.122-3.318-.209-4.28.722A3.527,3.527,0,0,0,5.5,58.231c.11,3.786,9.68,5.468,13.3,5.468a57.922,57.922,0,0,1,9.1,1.489C32.169,66.078,36.583,67,39.6,67c4,0,5.857-.55,6.416-1.9.6-1.442-.784-2.824-1.239-3.278-.622-.621-.395-1.792.11-2.676a3.972,3.972,0,0,1,4.349-2.079c3.583.9,5.3,1.157,6.644.44A6.227,6.227,0,0,0,60.5,59.3c3.611,0,5.5-3.321,5.5-6.6a4.316,4.316,0,0,0-1.7-3.253,13.267,13.267,0,0,1-2.813-3.839ZM7.7,58.168c-.024-.835.14-1.036.174-1.068a1.9,1.9,0,0,1,1.059-.176c.469,0,1.027.035,1.553.068.792.051,1.691.11,2.714.11,3.24,0,6.17-3.9,7.282-7.577.922-3.045.5-5.427-1.172-6.538s-1.949-2.53-2.42-4.9a30.311,30.311,0,0,0-1.563-5.592C12.98,26.63,10.519,23,5.5,23c-2.9,0-3.3-1.586-3.3-3.3a6.887,6.887,0,0,1,.206-2.2,6.571,6.571,0,0,1,3.712,1.07A6.79,6.79,0,0,0,9.9,19.7c2.919,0,4.4-1.481,4.4-4.4a4.937,4.937,0,0,0-1.123-2.4,13.393,13.393,0,0,1-1.143-2H12.1a2.186,2.186,0,0,1,1.972.778A4.308,4.308,0,0,0,17.6,13.1a14.441,14.441,0,0,0,5.992-1.21,1.1,1.1,0,0,0,.575-.717c.31-1.25,1.168-1.373,3.2-1.373H27.5V62.858A52.081,52.081,0,0,0,18.8,61.5c-5.061,0-11.063-2.2-11.1-3.331Zm35.267-.11c-1.112,1.963-1.013,4.05.253,5.315a3.436,3.436,0,0,1,.7.892c-.266.162-1.21.53-4.326.53a57.242,57.242,0,0,1-9.9-1.484V9.58A2.813,2.813,0,0,0,31.9,6.5c0-2.75,2.1-3.3,5.5-3.3.42,0,.42,0,.8.77a8.03,8.03,0,0,0,2.986,3.448A12.813,12.813,0,0,0,47.3,9.03V54.871a6.5,6.5,0,0,0-4.331,3.191ZM60.5,57.1a4.084,4.084,0,0,1-3.049-1.129,2.177,2.177,0,0,0-2.571-.406c-.628.33-1.918.166-5.113-.632-.091-.023-.177-.023-.267-.041V9.15l.888.036a42.942,42.942,0,0,1,6.6.592,45.449,45.449,0,0,1,6.586,1.752A24.209,24.209,0,0,0,62.7,17.5c0,2.711,0,2.711-2.81,4.585A8.186,8.186,0,0,0,56.1,28.5a1.112,1.112,0,0,0,.65,1.042,1.042,1.042,0,0,0,1.17-.212c.009-.007.868-.607,3.332.22a1.845,1.845,0,0,1,1.228,1.463,6.785,6.785,0,0,1-1.658,5.51c-2.538,2.538-3.731,5.221-1.307,10.069A15.4,15.4,0,0,0,62.747,51c.817.817,1.053,1.08,1.053,1.7C63.8,54.221,63.11,57.1,60.5,57.1Z"
+                    transform="translate(0 -0.999)"
+                    fill="#00cdc6"
+                  />
+                </g>
+              </g>
+            </svg>
+            <figcaption>
+              100% Made in <br />
+              France
+            </figcaption>
+          </figure>
+          <figure>
+            <svg
+              class="qualityicon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="66"
+              height="66"
+              viewBox="0 0 66 66"
+            >
+              <g
+                id="Rectangle_44"
+                data-name="Rectangle 44"
+                fill="#fff"
+                stroke="#707070"
+                stroke-width="1"
+                opacity="0"
+              >
+                <rect width="66" height="66" stroke="none" />
+                <rect x="0.5" y="0.5" width="65" height="65" fill="none" />
+              </g>
+              <g id="medal" transform="translate(7.605)">
+                <g id="Groupe_54" data-name="Groupe 54">
+                  <g id="Groupe_53" data-name="Groupe 53">
+                    <path
+                      id="Tracé_97"
+                      data-name="Tracé 97"
+                      d="M100.378,39.782l4.563-3.625-.026-5.859,2.539-5.275-2.527-5.275.026-5.859-4.563-3.638-2.5-5.288L92.218,3.677,87.681,0,82.009,1.338,76.35,0,71.813,3.677,66.141,4.963l-2.5,5.288-4.576,3.638.026,5.859L56.55,25.023,59.089,30.3l-.026,5.859,4.563,3.638,1.83,3.885L58.045,59.7l8.779-1.351L71.439,66l7.683-16.617L82,48.707l2.269.533L92.025,66l4.615-7.652,8.779,1.351L98.264,44.238ZM71.194,61.492l-3.3-5.47-6.265.961,5.414-11.719,4.77,1.078L76.35,50.02Zm10.815-14.98-5.143,1.221-4.112-3.339L67.6,43.225l-2.269-4.807-4.151-3.3.026-5.327L58.9,25.01,61.2,20.216l-.026-5.327,4.151-3.3L67.6,6.782l5.156-1.169,4.112-3.339,5.143,1.208,5.143-1.208,4.112,3.339,5.156,1.169,2.269,4.807,4.151,3.3-.026,5.327L105.122,25l-2.307,4.781.026,5.327-4.151,3.3-2.269,4.807-5.156,1.169L87.152,47.72ZM101.835,57l-6.265-.961-3.3,5.457L86.882,49.851l.786.182,4.538-3.677,4.267-.961Z"
+                      transform="translate(-56.55)"
+                      fill="#00cdc6"
+                    />
+                  </g>
+                </g>
+                <g
+                  id="Groupe_56"
+                  data-name="Groupe 56"
+                  transform="translate(7.193 6.613)"
+                >
+                  <g id="Groupe_55" data-name="Groupe 55">
+                    <path
+                      id="Tracé_98"
+                      data-name="Tracé 98"
+                      d="M130.616,50.9a18.41,18.41,0,1,0,18.266,18.41A18.365,18.365,0,0,0,130.616,50.9Zm0,34.689A16.28,16.28,0,1,1,146.768,69.31,16.233,16.233,0,0,1,130.616,85.589Z"
+                      transform="translate(-112.35 -50.9)"
+                      fill="#00cdc6"
+                    />
+                  </g>
+                </g>
+                <g
+                  id="Groupe_58"
+                  data-name="Groupe 58"
+                  transform="translate(11.73 10.472)"
+                >
+                  <g id="Groupe_57" data-name="Groupe 57">
+                    <path
+                      id="Tracé_99"
+                      data-name="Tracé 99"
+                      d="M175.007,90.656H164.514L161.279,80.6l-3.236,10.056H147.55l8.482,6.21L152.8,106.922l8.482-6.21,8.482,6.21-3.236-10.056Zm-13.729,7.418-4.473,3.274,1.7-5.3-4.473-3.274h5.517l1.7-5.3,1.7,5.3h5.517L164,96.048l1.753,5.3Z"
+                      transform="translate(-147.55 -80.6)"
+                      fill="#00cdc6"
+                    />
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <figcaption>30 ans d'activité <br />et de qualité</figcaption>
+          </figure>
+          <figure>
+            <svg
+              class="customer-serviceicon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="66"
+              height="66"
+              viewBox="0 0 66 66"
+            >
+              <rect
+                id="Rectangle_48"
+                data-name="Rectangle 48"
+                width="66"
+                height="66"
+                fill="#fff"
+                opacity="0"
+              />
+              <path
+                id="customer-service"
+                d="M67.814,34.26l-3.2-2.245a28.241,28.241,0,0,0-56.461,0L4.962,34.26a.938.938,0,0,0-.4.767V45a.937.937,0,0,0,.395.763l3.58,2.559a.938.938,0,0,0,.543.176h3.565a.938.938,0,0,0,.937-.937V32.573c0-.013,0-.026,0-.039a22.8,22.8,0,1,1,45.6,0,.383.383,0,0,0,.007.1V47.554a.938.938,0,0,0,.937.937h.845v1.08a5.974,5.974,0,0,1-5.06,5.891,21.226,21.226,0,0,0,1.808-8.585V33.143a21.34,21.34,0,1,0-42.68,0V46.88A21.332,21.332,0,0,0,54.931,57.416h.075a7.853,7.853,0,0,0,7.843-7.845V48.493h.845a.938.938,0,0,0,.545-.175l3.58-2.559A.937.937,0,0,0,68.212,45V35.027a.938.938,0,0,0-.4-.767ZM36.383,13.672A19.493,19.493,0,0,1,55.849,33.143V38.19a19.115,19.115,0,0,1-18.655-9.53.937.937,0,0,0-1.621,0,19.115,19.115,0,0,1-18.655,9.53V33.143A19.493,19.493,0,0,1,36.384,13.672Zm0,52.68A19.493,19.493,0,0,1,16.918,46.88V40.074c.65.059,1.3.1,1.955.1a21.25,21.25,0,0,0,17.509-9.284A21.25,21.25,0,0,0,53.9,40.175c.653,0,1.305-.041,1.955-.1V46.88a19.354,19.354,0,0,1-2.041,8.662H45.022a3.057,3.057,0,0,0-2.9-2.116H38.405a3.053,3.053,0,0,0,0,6.106h3.712a3.057,3.057,0,0,0,2.9-2.117H52.74a19.459,19.459,0,0,1-16.357,8.936Zm6.907-9.815a1.178,1.178,0,0,1-1.173,1.122H38.405a1.178,1.178,0,0,1,0-2.357h3.712a1.178,1.178,0,0,1,1.173,1.122c0,.019-.006.037-.006.057S43.289,56.517,43.291,56.537ZM11.708,46.619H9.381l-2.945-2.1v-9l2.939-2.063h2.332ZM36.384,8.324A24.82,24.82,0,0,0,11.75,31.578H10.036a26.375,26.375,0,0,1,52.694,0H61.018A24.82,24.82,0,0,0,36.384,8.32ZM66.338,44.517l-2.945,2.1H61.066V33.452H63.4l2.939,2.063Z"
+                transform="translate(-3.343 -2.227)"
+                fill="#00cdc6"
+              />
+            </svg>
+            <figcaption>Un service client <br />à votre écoute</figcaption>
+          </figure>
+          <figure>
+            <svg
+              class="creativetoolsicon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="66"
+              height="66"
+              viewBox="0 0 66 66"
+            >
+              <g
+                id="Rectangle_47"
+                data-name="Rectangle 47"
+                fill="#fff"
+                stroke="#707070"
+                stroke-width="1"
+                opacity="0"
+              >
+                <rect width="66" height="66" stroke="none" />
+                <rect x="0.5" y="0.5" width="65" height="65" fill="none" />
+              </g>
+              <g id="paint-palette-and-brush" transform="translate(0.88 5.28)">
+                <path
+                  id="Tracé_111"
+                  data-name="Tracé 111"
+                  d="M50.643,206.386a5.32,5.32,0,0,0-3.285-1.141,5.265,5.265,0,0,0-4.123,1.968,5.218,5.218,0,0,0,.837,7.374,5.318,5.318,0,0,0,3.284,1.141,5.262,5.262,0,0,0,4.124-1.97,5.218,5.218,0,0,0-.837-7.372Zm-1.036,5.865a2.895,2.895,0,0,1-4.043.45,2.814,2.814,0,0,1-.455-3.981,2.9,2.9,0,0,1,4.044-.448,2.813,2.813,0,0,1,.455,3.979Z"
+                  transform="translate(-33.649 -167.433)"
+                  fill="#00cdc6"
+                />
+                <path
+                  id="Tracé_112"
+                  data-name="Tracé 112"
+                  d="M169.226,107.64a5.272,5.272,0,0,0,4.976-3.521,5.174,5.174,0,0,0-.233-4,5.294,5.294,0,0,0-7.04-2.448,5.222,5.222,0,0,0-2.463,7A5.32,5.32,0,0,0,169.226,107.64Zm-2.723-6.17a2.824,2.824,0,0,1,1.462-1.626,2.89,2.89,0,0,1,3.842,1.328,2.788,2.788,0,0,1,.126,2.153,2.83,2.83,0,0,1-1.462,1.627,2.871,2.871,0,0,1-1.245.283,2.9,2.9,0,0,1-2.6-1.614A2.785,2.785,0,0,1,166.5,101.471Z"
+                  transform="translate(-131.094 -81)"
+                  fill="#00cdc6"
+                />
+                <path
+                  id="Tracé_113"
+                  data-name="Tracé 113"
+                  d="M108.641,65.771a5.346,5.346,0,0,0,1.176.132,5.242,5.242,0,0,0,5.142-4.072,5.187,5.187,0,0,0-.672-3.943,5.241,5.241,0,0,0-3.3-2.333,5.343,5.343,0,0,0-1.181-.133,5.237,5.237,0,0,0-5.136,4.074,5.174,5.174,0,0,0,.668,3.943A5.234,5.234,0,0,0,108.641,65.771Zm-1.63-5.737a2.845,2.845,0,0,1,2.793-2.209,2.937,2.937,0,0,1,.649.073,2.854,2.854,0,0,1,1.8,1.269,2.8,2.8,0,0,1,.364,2.125,2.885,2.885,0,0,1-2.8,2.206,2.943,2.943,0,0,1-.647-.073,2.847,2.847,0,0,1-1.8-1.267A2.788,2.788,0,0,1,107.011,60.034Z"
+                  transform="translate(-83.591 -47.626)"
+                  fill="#00cdc6"
+                />
+                <path
+                  id="Tracé_114"
+                  data-name="Tracé 114"
+                  d="M43.174,84.766a5.223,5.223,0,0,0,.836-7.374,5.308,5.308,0,0,0-7.409-.829,5.219,5.219,0,0,0-.835,7.375,5.3,5.3,0,0,0,7.408.828Zm-5.535-2.335a2.815,2.815,0,0,1,.452-3.981,2.9,2.9,0,0,1,4.046.449,2.819,2.819,0,0,1-.456,3.983,2.9,2.9,0,0,1-4.042-.451Z"
+                  transform="translate(-27.676 -63.622)"
+                  fill="#00cdc6"
+                />
+                <path
+                  id="Tracé_115"
+                  data-name="Tracé 115"
+                  d="M64.66,25.893a1.587,1.587,0,0,0-1.163-.459c-.686,0-2.508,0-13.571,9.415l-.672.574a29.5,29.5,0,0,0-27.6-18.91h-.005A28.944,28.944,0,0,0,7.89,20.469C2.8,23.46,0,27.461,0,31.734c0,5.158,2.911,7.316,5.249,9.05,1.906,1.414,3.412,2.53,3.413,4.977s-1.5,3.562-3.409,4.975C2.915,52.468.006,54.625.008,59.784c0,4.272,2.805,8.274,7.895,11.268a28.967,28.967,0,0,0,13.77,3.964h.008a29.415,29.415,0,0,0,20.845-8.559A28.918,28.918,0,0,0,51.159,46.09c1.866-2.124,3.675-4.235,5.325-6.224,2.824-3.4,5-6.211,6.454-8.346C64.871,28.693,65.718,26.959,64.66,25.893ZM40.833,64.75a27.024,27.024,0,0,1-19.152,7.862h-.008c-7.755,0-19.259-5.39-19.261-12.829,0-3.948,2.074-5.487,4.272-7.116,2.054-1.523,4.382-3.249,4.382-6.907s-2.33-5.384-4.385-6.908c-2.2-1.631-4.275-3.171-4.277-7.119,0-4.568,4.2-7.72,6.7-9.192a26.8,26.8,0,0,1,12.545-3.625h0A27.092,27.092,0,0,1,47.31,37.1c-5.214,4.553-10.86,9.8-15.065,14.02-6.984.9-7.935,5.558-8.631,8.978-.592,2.911-.977,4.319-3.224,4.5a1.2,1.2,0,0,0-.364,2.309,22.013,22.013,0,0,0,7.6,1.464h0a12.3,12.3,0,0,0,7.135-2.016,12.418,12.418,0,0,0,4.815-7.767c2.747-2.78,5.887-6.131,8.991-9.584A26.533,26.533,0,0,1,40.833,64.75ZM37.16,58.364c-1.274,5.048-4.479,7.607-9.535,7.606h0a18.029,18.029,0,0,1-3.684-.409c1.282-1.308,1.683-3.275,2.029-4.98.661-3.247,1.285-6.32,6.4-7.05Zm16.6-18.985c-4.765,5.677-10.533,12.053-15.281,16.9l-.735-.741L34.5,52.269c4.305-4.285,9.828-9.4,14.98-13.867h0c.6-.521,1.2-1.036,1.786-1.538A92.39,92.39,0,0,1,61.978,28.58,92.615,92.615,0,0,1,53.76,39.379Z"
+                  transform="translate(0 -16.512)"
+                  fill="#00cdc6"
+                />
+              </g>
+            </svg>
+            <figcaption>
+              Des outils de création<br />
+              intuitifs
+            </figcaption>
+          </figure>
+          <figure>
+            <svg
+              class="storageicon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="75"
+              height="75"
+              viewBox="0 0 75 75"
+            >
+              <rect
+                id="Rectangle_49"
+                data-name="Rectangle 49"
+                width="75"
+                height="75"
+                fill="#fff"
+                opacity="0"
+              />
+              <g id="upload" transform="translate(0 3)">
+                <path
+                  id="Tracé_116"
+                  data-name="Tracé 116"
+                  d="M28.375,48.5H19a3.128,3.128,0,0,1-3.125-3.125V29.751H8.062a1.564,1.564,0,0,1-1.106-2.669L22.581,11.457a1.564,1.564,0,0,1,2.209,0L40.415,27.082a1.564,1.564,0,0,1-1.1,2.669H31.5V45.376A3.128,3.128,0,0,1,28.375,48.5ZM11.834,26.626h5.6A1.563,1.563,0,0,1,19,28.188V45.376h9.375V28.188a1.563,1.563,0,0,1,1.563-1.562h5.6L23.687,14.772Z"
+                  transform="translate(13.813 20.249)"
+                  fill="#00cdc6"
+                />
+                <path
+                  id="Tracé_117"
+                  data-name="Tracé 117"
+                  d="M14.066,50.906a1.745,1.745,0,0,1-.178-.009,15.621,15.621,0,0,1,.663-31.109,23.415,23.415,0,0,1,43.741-6.15,18.713,18.713,0,0,1,3.066,36.619,1.563,1.563,0,0,1-.834-3.013A15.586,15.586,0,0,0,57.2,16.684a1.561,1.561,0,0,1-1.331-.9,20.288,20.288,0,0,0-38.444,5.747,1.565,1.565,0,0,1-1.547,1.344,12.5,12.5,0,0,0-1.638,24.916,1.563,1.563,0,0,1-.172,3.116Z"
+                  transform="translate(0 -1)"
+                  fill="#00cdc6"
+                />
+              </g>
+            </svg>
+            <figcaption>
+              Stockage Photo<br />
+              en ligne
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="sectionfive">
+        <h2>Qui sommes-nous ?</h2>
+        <div class="whodiv">
+          <article class="image-pixateam">
+            <button class="teamlink">L'équipe</button>
+          </article>
+          <article class="image-instagrampixa">
+            <button class="instagrampixagramlink">Notre Instagram</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="sectionsix">
+        <h2>Le blog</h2>
+        <article class="blogarticle">
+          <img
+            class="blogimg"
+            src="images-icones/img/blog.png"
+            alt="Image composée en 3 parties: 1 aperçu article, 1 aperçu du chat pixagram, 1 photo représentant l'équipe menant une action écologique"
+          />
+          <ul class="ulblog">
+            <li>Tenez-vous informés des dernières tendances photos</li>
+            <li>Suivez-nous dans nos engagements</li>
+            <li>Rejoignez notre communauté</li>
+          </ul>
+          <a href="">Voir le blog</a>
+        </article>
+      </section>
+
+      <section class="sectionseven">
+        <figure class="securepaymentfigure">
+          <figcaption>Paiement sécurisé</figcaption>
+          <img
+            class="paymentsimg"
+            src="images-icones/img/paiements.png"
+            alt="paiement sécurisé avec carte bleue, mastercard, visa et paypal"
+          />
+        </figure>
+        <figure class="deliveryfigure">
+          <figcaption>Livraison rapide, sécurisé et flexible</figcaption>
+          <div class="deliverydiv">
+            <img
+              class="laposteimg"
+              src="images-icones/img/laposte.png"
+              alt="livraison avec la poste"
+            />
+            <img
+              class="chronopostimg"
+              src="images-icones/img/chronopost.png"
+              alt="livraison avec chronopost"
+            />
+          </div>
+        </figure>
+        <article>Gardons le contact !</article>
+      </section>
     </main>
 
     <footer>
-        <h3>Nos produits</h3>
-        <ul>
-            <li>Tous nos produits</li>
-            <li>Livre photo</li>
-            <li>Tirage photo</li>
-            <li>Calendrier photo</li>
-            <li>Déco photo</li>
-            <li>Faire-part et cartes</li>
-            <li>Objets photo</li>
-        </ul>
-        <h3>A propos</h3>
-        <ul>
-            <li>Le blog</li>
-            <li>Qui sommes-nous ?</li>
-            <li>Recrutement</li>
-            <li>Mentions légales</li>
-            <li>Conditions générales de vente</li>
-            <li>Faire-part et cartes</li>
-        </ul>
-        <h3>Aide</h3>
-        <ul>
-            <li>Contactez-nous</li>
-            <li>Plan du site</li>
-            <li>FAQ</li>
-            <li>Code promo Pixagram</li>
-            <li>Les tutos</li>
-        </ul>
+      <div class="footercontent">
+        <svg
+          class="pixagramlogofooter"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 74.42 37.848"
+        >
+          <g
+            id="Logo_Pixagram"
+            data-name="Logo Pixagram"
+            transform="translate(-795.941 -234.512)"
+            opacity="0.77"
+          >
+            <g
+              id="Rectangle_52"
+              data-name="Rectangle 52"
+              transform="matrix(0.831, -0.557, 0.557, 0.831, 795.941, 250.088)"
+              fill="#fff"
+              stroke="#000"
+              stroke-miterlimit="10"
+              stroke-width="0.5"
+            >
+              <rect width="21.247" height="26.817" rx="1" stroke="none" />
+              <rect
+                x="0.25"
+                y="0.25"
+                width="20.747"
+                height="26.317"
+                rx="0.75"
+                fill="none"
+              />
+            </g>
+            <g
+              id="Rectangle_53"
+              data-name="Rectangle 53"
+              transform="translate(851.402 238.547) rotate(26.832)"
+              fill="#fff"
+              stroke="#000"
+              stroke-miterlimit="10"
+              stroke-width="0.5"
+            >
+              <rect width="21.247" height="26.817" rx="1" stroke="none" />
+              <rect
+                x="0.25"
+                y="0.25"
+                width="20.747"
+                height="26.317"
+                rx="0.75"
+                fill="none"
+              />
+            </g>
+            <g
+              id="Rectangle_54"
+              data-name="Rectangle 54"
+              transform="translate(845.727 257.067) rotate(-63.168)"
+              fill="#fcf508"
+              stroke="#fcf508"
+              stroke-miterlimit="10"
+              stroke-width="1"
+              opacity="0.77"
+            >
+              <rect width="16.096" height="15.452" rx="1" stroke="none" />
+              <rect
+                x="0.5"
+                y="0.5"
+                width="15.096"
+                height="14.452"
+                rx="0.5"
+                fill="none"
+              />
+            </g>
+            <g
+              id="Rectangle_55"
+              data-name="Rectangle 55"
+              transform="matrix(-0.831, 0.557, -0.557, -0.831, 821.464, 254.712)"
+              fill="#00b7eb"
+              stroke="#00b7eb"
+              stroke-miterlimit="10"
+              stroke-width="1"
+              opacity="0.77"
+            >
+              <rect width="16.096" height="15.452" rx="1" stroke="none" />
+              <rect
+                x="0.5"
+                y="0.5"
+                width="15.096"
+                height="14.452"
+                rx="0.5"
+                fill="none"
+              />
+            </g>
+            <g
+              id="Rectangle_56"
+              data-name="Rectangle 56"
+              transform="translate(820.935 234.512)"
+              fill="#fff"
+              stroke="#000"
+              stroke-miterlimit="10"
+              stroke-width="0.5"
+            >
+              <rect width="25.328" height="31.969" rx="1" stroke="none" />
+              <rect
+                x="0.25"
+                y="0.25"
+                width="24.828"
+                height="31.469"
+                rx="0.75"
+                fill="none"
+              />
+            </g>
+            <g
+              id="Rectangle_57"
+              data-name="Rectangle 57"
+              transform="translate(824.154 237.917)"
+              fill="#ff0090"
+              stroke="#ff0090"
+              stroke-miterlimit="10"
+              stroke-width="1"
+              opacity="0.77"
+            >
+              <rect width="19.188" height="18.42" rx="1" stroke="none" />
+              <rect
+                x="0.5"
+                y="0.5"
+                width="18.188"
+                height="17.42"
+                rx="0.5"
+                fill="none"
+              />
+            </g>
+          </g>
+        </svg>
+        <div class="pixagramdiv">
+          <h2>Pixagram</h2>
+        </div>
+        <div class="footeroptions">
+          <div class="nosproduitsdiv">
+            <h3>Nos produits</h3>
+            <ul>
+              <li>Tous nos produits</li>
+              <li>Livre photo</li>
+              <li>Tirage photo</li>
+              <li>Calendrier photo</li>
+              <li>Déco photo</li>
+              <li>Faire-part et cartes</li>
+              <li>Objets photo</li>
+            </ul>
+          </div>
+          <div class="aproposdiv">
+            <h3>A propos</h3>
+            <ul>
+              <li>Le blog</li>
+              <li>Qui sommes-nous ?</li>
+              <li>Recrutement</li>
+              <li>Mentions légales</li>
+              <li>Conditions générales de vente</li>
+              <li>Faire-part et cartes</li>
+            </ul>
+          </div>
+          <div class="aidediv">
+            <h3>Aide</h3>
+            <ul>
+              <li>Contactez-nous</li>
+              <li>Plan du site</li>
+              <li>FAQ</li>
+              <li>Code promo Pixagram</li>
+              <li>Les tutos</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script src="pixagram.js"></script>
-
-</body>
-
+  </body>
 </html>
