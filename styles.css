@@ -47,8 +47,8 @@ a {
 
 header {
   top: 0;
-  height: 8%;
   width: 100%;
+  height: 61.99px;
   background-color: #fff;
   position: fixed;
   z-index: 1;
@@ -58,15 +58,6 @@ header {
 .high-header {
   display: flex;
   width: 100%;
-}
-
-.giftideasfigure,
-.discountfigure,
-.searchfigure,
-.myaccounttext,
-.mybagtext,
-header li {
-  display: none;
 }
 
 /************Positionnement des éléments header*********/
@@ -90,26 +81,28 @@ h1 {
 
 h1 {
   margin-left: 7%;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .righticonheader {
   display: flex;
   width: 30%;
+  margin-left: 0;
+  margin-right: 5%;
 }
 .myaccountfigure,
 .mybagfigure {
   display: flex;
   justify-content: right;
   align-items: center;
-  margin-left: 0;
+  margin-left: 0px;
   margin-right: 0;
 }
 
 .mybagsvg,
 .accountsvg {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   margin-left: 20px;
 }
 
@@ -121,8 +114,7 @@ h1 {
   background-size: cover;
   position: relative;
   width: 100%;
-  height: 100vh;
-  margin-top: 16%;
+  height: 487.21px;
 }
 
 /*Placer le texte */
@@ -266,13 +258,12 @@ h3,
 
 /***************Section 3 - Nos avis clients*****************/
 
-
-.customeradvicediv{
-display:flex;
-justify-content: center;
+.customeradvicediv {
+  display: flex;
+  justify-content: center;
 }
-.customeradvice{
-width:50%;
+.customeradvice {
+  width: 50%;
 }
 
 /***************Section 4 - Nos valeurs*****************/
@@ -397,10 +388,6 @@ footer li {
     height: 10%;
   }
 
-  .hero-image {
-    margin-top: 11%;
-  }
-
   .hero-text {
     width: 100%;
     font-size: 17px;
@@ -428,70 +415,137 @@ footer li {
     justify-content: center;
     /*padding-top: 90%;*/
   }
-
-  @media (min-width: 1200px) {
-    .image-photoalbum,
-    .image-photoprinting,
-    .image-photocalendar,
-    .image-photodeco,
-    .image-photoshareandcards,
-    .image-photoobjects {
-      margin-left: 5%;
-      width: 100%;
-      height: 30vh;
-    }
-    .firstsection button,
-    .sectionfive button {
-      border: 1.7px solid #fff;
-      padding: 0.7rem 1.2rem;
-      border-radius: 30px;
-      color: #00cdc6;
-      background: #fff;
-      font-size: 15px;
-      font-weight: bold;
-    }
-
-    .lowheader {
-      visibility: visible;
-    }
-
-    .divlinkhero {
-      padding-top: 55%;
-    }
-    .firstsection {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      width: 100%;
-    }
-
-    .firstthreepictures1 {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-    }
-    .secondthreepictures1 {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-    }
-
-    .sectionfive{
-display:flex;
-flex-direction: column;
-justify-content:center;
-align-items: center;
-    }
-
-    .whodiv{
-      display:flex;
-flex-direction: row;
-    }
-  .image-pixateam,
-  .image-instagrampixa{
-    width:400px;
-    height:300px;
+}
+@media (max-width: 1199px) {
+  .giftideasfigure,
+  .discountfigure,
+  .searchfigure,
+  .myaccounttext,
+  .mybagtext,
+  header li {
+    display: none;
   }
+}
+
+@media (min-width: 1200px) {
+  /*dimensionner les images*/
+  .image-photoalbum,
+  .image-photoprinting,
+  .image-photocalendar,
+  .image-photodeco,
+  .image-photoshareandcards,
+  .image-photoobjects {
+    margin-left: 5%;
+    width: 100%;
+    height: 30vh;
+  }
+
+  /*dimensionner les boutons*/
+  .firstsection button,
+  .sectionfive button {
+    border: 1.7px solid #fff;
+    padding: 0.7rem 1.2rem;
+    border-radius: 30px;
+    color: #00cdc6;
+    background: #fff;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  /*Modification header*/
+  header {
+  }
+  .lowheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .lowheader ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*Section hero full image*/
+  .divlinkhero {
+    padding-top: 55%;
+  }
+
+  /*Nos produits*/
+  .firstsection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .firstthreepictures1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .secondthreepictures1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  /*Section 2 tendances clients */
+  .sectiontwo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /*modifier les articles de la section 2*/
+  .nostalgicphotosarticle,
+  .instaprintingarticle {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nostalgicphotostext,
+  .instaprintingtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .instaprintingarticle {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .sectiontwo p {
+    font-size: 16px;
+  }
+
+  .sectiontwo img {
+    display: flex;
+    width: 30%;
+  }
+
+  /*section 5 qui sommes nous*/
+  .sectionfive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .whodiv {
+    display: flex;
+    flex-direction: row;
+  }
+  .image-pixateam,
+  .image-instagrampixa {
+    width: 400px;
+    height: 300px;
+  }
+
+  /*Footer*/
 
   .pixagramlogofooter {
     width: 12%;
