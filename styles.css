@@ -142,11 +142,11 @@ h1 {
   padding-top: 90%;
 }
 .div-link-hero a {
-  border: 1.7px solid #000;
+  border: 1.7px solid #fff;
   padding: 10px 20px 10px 20px;
   border-radius: 30px;
-  color: #fff;
-  background: #000;
+  color: #00cdc6;
+  background: #fff;
   font-weight: 700;
   font-size: 15px;
   text-decoration: none;
@@ -228,11 +228,11 @@ h3,
 .first-three-img-s1 a,
 .second-three-img-s1 a,
 .section-five a {
-  border: 2px solid #000;
+  border: 2px solid #fff;
   padding: 0.7rem 1.2rem;
   border-radius: 8px;
-  color: #fff;
-  background: #000;
+  color: #00cdc6;
+  background: #fff;
   font-size: 30px;
   font-weight: 700;
   text-decoration: none;
