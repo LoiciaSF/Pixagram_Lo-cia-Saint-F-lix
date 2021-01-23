@@ -142,11 +142,11 @@ h1 {
   padding-top: 90%;
 }
 .div-link-hero a {
-  border: 1.7px solid #000;
+  border: 1.7px solid #070071;
   padding: 10px 20px 10px 20px;
   border-radius: 30px;
-  color: #;
-  background: #fff;
+  color: #fff;
+  background: #070071;
   font-weight: 700;
   font-size: 15px;
   text-decoration: none;
@@ -231,8 +231,8 @@ h3,
   border: 2px solid #070071;
   padding: 0.7rem 1.2rem;
   border-radius: 8px;
-  color: #070071;
-  background: #fff;
+  color: #fff;
+  background: #070071;
   font-size: 30px;
   font-weight: 700;
   text-decoration: none;
