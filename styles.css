@@ -62,16 +62,16 @@ header {
 
 /************Positionnement des éléments header*********/
 /*logo pixagram dans la nav*/
-.pixagramlogonav {
+.pixagram-logo-nav {
   width: 30%;
   justify-content: center;
 }
 /*Logo et label pixagram*/
-.fontpixagramlogo {
+.font-pixagram-logo {
   justify-content: center;
   align-items: center;
 }
-.fontpixagramlogo,
+.font-pixagram-logo,
 h1 {
   display: flex;
   flex-direction: row;
@@ -84,14 +84,14 @@ h1 {
   font-size: 20px;
 }
 
-.righticonheader {
+.right-icon-header {
   display: flex;
   width: 30%;
   margin-left: 0;
   margin-right: 5%;
 }
-.myaccountfigure,
-.mybagfigure {
+.myaccount-figure,
+.mybag-figure {
   display: flex;
   justify-content: right;
   align-items: center;
@@ -106,7 +106,7 @@ h1 {
   margin-left: 20px;
 }
 
-/*Hero image*/
+/*****************Hero full image********************/
 .hero-image {
   background-image: url("images-icones/img/concoursphoto.jpg");
   background-position: bottom;
@@ -136,16 +136,16 @@ h1 {
 }
 
 /*Styliser le bouton du hero full image*/
-.divlinkhero {
+.div-link-hero {
   display: flex;
   justify-content: center;
   padding-top: 90%;
 }
-.divlinkhero a {
-  border: 1.7px solid #fff;
+.div-link-hero a {
+  border: 1.7px solid #000;
   padding: 10px 20px 10px 20px;
   border-radius: 30px;
-  color: #00cdc6;
+  color: #;
   background: #fff;
   font-weight: 700;
   font-size: 15px;
@@ -166,8 +166,8 @@ h3 {
 }
 
 h3,
-.sectiontwo p,
-.sectionfour p {
+.section-two p,
+.section-four p {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -177,34 +177,34 @@ h3,
 
 /*****************Section 1 - Vos options photo***************/
 
-.image-photoalbum {
+.photoalbum-img {
   background-image: url("images-icones/img/albumphoto.jpg");
 }
-.image-photoprinting {
+.photoprinting-img {
   background-image: url("images-icones/img/tiragephoto.jpg");
 }
-.image-photocalendar {
+.photocalendar-img {
   background-image: url("images-icones/img/calendrierphoto.jpg");
 }
 .image-photodeco {
   background-image: url("images-icones/img/decophoto.jpg");
 }
-.image-photoshareandcards {
+.img-shareandcards {
   background-image: url("images-icones/img/faire-partetcartes.jpg");
 }
-.image-photoobjects {
+.img-photoobjects {
   background-image: url("images-icones/img/objetsphoto.jpg");
 }
 
 /******Stylyser les images des sections 1 et 5*******/
-.image-photoalbum,
-.image-photoprinting,
-.image-photocalendar,
+.photoalbum-img,
+.photoprinting-img,
+.photocalendar-img,
 .image-photodeco,
-.image-photoshareandcards,
-.image-photoobjects,
-.image-pixateam,
-.image-instagrampixa {
+.img-shareandcards,
+.img-photoobjects,
+.img-pixateam,
+.img-instagrampixa {
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -220,33 +220,33 @@ h3,
   height: 70vh;
 }
 
-.firstsection article {
+.section-one article {
   display: flex;
   justify-content: center;
 }
 
-.firstthreepictures1 a,
-.secondthreepictures1 a,
-.sectionfive a {
-  border: 1.7px solid #fff;
+.first-three-img-s1 a,
+.second-three-img-s1 a,
+.section-five a {
+  border: 2px solid #070071;
   padding: 0.7rem 1.2rem;
-  border-radius: 30px;
-  color: #00cdc6;
+  border-radius: 8px;
+  color: #070071;
   background: #fff;
   font-size: 30px;
-  font-weight: bold;
+  font-weight: 700;
   text-decoration: none;
 }
 
 /***************Section 2 - Les tendances clients*****************/
 /*dimensionner*/
-.sectiontwo {
+.section-two {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.sectiontwo img {
+.section-two img {
   display: flex;
   margin: auto;
   width: 90%;
@@ -254,59 +254,59 @@ h3,
 
 /***Positionner les h3, les paragraphes***/
 
-.nostalgicphotos,
-.instaprinting {
+.img-nostalgic-photos,
+.img-instaprinting {
   width: 40%;
   border-radius: 8px;
 }
 
 /***************Section 3 - Nos avis clients*****************/
 
-.customeradvicediv {
+.div-customer-advice {
   display: flex;
   justify-content: center;
 }
-.customeradvice {
-  width: 50%;
+.svg-customer-advice {
+  width: 100%;
 }
 
 /***************Section 4 - Nos valeurs*****************/
 
-.sectionfour {
+.section-four {
   display: flex;
   flex-wrap: wrap;
 }
 
-.valueicondiv {
+.div-value-icon {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.sectionfour figure {
+.section-four figure {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.sectionfour figcaption {
+.section-four figcaption {
   text-align: center;
 }
 
 /***************Section 5 - Qui sommes-nous ? *****************/
 
-.image-pixateam {
+.img-pixateam {
   background-image: url("images-icones/img/equipepixagram.jpg");
 }
-.image-instagrampixa {
+.img-instagrampixa {
   background-image: url("images-icones/img/smartphoneinstagram.jpg");
 }
 
 /***************Section 6 - Le blog *****************/
 
-.sectionsix {
+.section-six {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -314,43 +314,58 @@ h3,
   line-height: 1.5;
 }
 
-.sectionsix ul {
+.section-six ul {
   list-style-type: armenian;
 }
 
-.blogimg {
+.img-blog {
   width: 80%;
   border-radius: 8px;
 }
 /***************Section 7 - réassurance *****************/
-.sectionseven {
+.section-seven {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
 
-.paymentsimg,
-.chronopostimg {
+.img-payments,
+.img-chronopost {
   width: 35%;
 }
-.laposteimg {
+.img-laposte {
   width: 20%;
 }
-.sectionseven figcaption {
+.section-seven figcaption {
   margin-bottom: 2%;
 }
-.deliverydiv {
+.div-delivery {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+/*****Réseaux sociaux*******/
+.article-stay-in-touch {
+  margin-top: 10%;
+}
+.div-social-network {
+  display: flex;
+  justify-content: center;
+  margin: 10% 0% 10% 0%;
+}
+
+.icon-social-network {
+  margin-left: 7%;
+}
+
 /**********************footer*****************************/
 footer {
   width: 100%;
   background-color: #eeeded;
 }
-.footercontent {
+.footer-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -360,7 +375,7 @@ footer {
 footer h2 {
   font-size: 35px;
 }
-footer h3 {
+footer h4 {
   font-size: 25px;
 }
 
@@ -369,7 +384,7 @@ footer h3 {
   margin-top: 5%;
 }
 
-.pixagramdiv {
+.div-pixagram {
   display: flex;
   flex-direction: row;
 }
@@ -379,6 +394,27 @@ footer li {
   line-height: 2.5;
 }
 
+.div-newsletter-input {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.text-newsletter {
+  border: 0.5px solid #959595;
+  padding: 10px 10px 10px 10px;
+}
+.newsletter-button {
+  margin-top: 5%;
+  border: 1.7px solid#00cdc6;
+  padding: 7px 0px 7px 0px;
+  border-radius: 20px;
+  color: #fff;
+  background: #00cdc6;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+/*******************************************Responsive**********************************************/
 @media (min-width: 481px) {
   a {
     display: flex;
@@ -391,7 +427,7 @@ footer li {
     top: 0;
     height: 10%;
   }
-  /*Hereo full image*/
+  /*****************Hero full image****************/
   .hero-text {
     width: 100%;
     font-size: 17px;
@@ -400,35 +436,31 @@ footer li {
     font-size: 17px;
   }
 
-  .divlinkhero {
+  .div-link-hero {
     /*padding-top: 110%;*/
   }
 
-  .divlinkhero a {
-    border: 1.7px solid #fff;
+  .div-link-hero a {
     padding: 12px 20px 12px 20px;
     border-radius: 30px;
-    color: #00cdc6;
-    background: #fff;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 25px;
-    text-decoration: none;
   }
 }
 
 @media (min-width: 768px) {
-  .divlinkhero {
+  .div-link-hero {
     display: flex;
     justify-content: center;
     /*padding-top: 90%;*/
   }
 }
 @media (max-width: 1199px) {
-  .giftideasfigure,
-  .discountfigure,
-  .searchfigure,
-  .myaccounttext,
-  .mybagtext,
+  .gift-ideas-figure,
+  .discount-figure,
+  .search-figure,
+  .myaccount-text,
+  .mybag-text,
   header li {
     display: none;
   }
@@ -436,30 +468,25 @@ footer li {
 
 @media (min-width: 1200px) {
   /*dimensionner les images*/
-  .image-photoalbum,
-  .image-photoprinting,
-  .image-photocalendar,
+  .photoalbum-img,
+  .photoprinting-img,
+  .photocalendar-img,
   .image-photodeco,
-  .image-photoshareandcards,
-  .image-photoobjects {
+  .img-shareandcards,
+  .img-photoobjects {
     margin-left: 5%;
     width: 100%;
     height: 30vh;
   }
 
   /*dimensionner les boutons*/
-  .firstsection a,
-  .sectionfive a {
-    border: 1.7px solid #fff;
-    padding: 0.7rem 1.2rem;
-    border-radius: 30px;
-    color: #00cdc6;
-    background: #fff;
+  .section-one a,
+  .section-five a {
     font-size: 15px;
-    font-weight: bold;
+    font-weight: 700;
   }
 
-  /*Modification header*/
+  /*******Modification header*****/
   header {
     height: 20%;
   }
@@ -482,8 +509,8 @@ footer li {
     font-size: 12px;
   }
 
-  .myaccountfigure,
-  .mybagfigure {
+  .myaccount-figure,
+  .mybag-figure {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -494,25 +521,25 @@ footer li {
   .accountsvg {
     margin-left: 0px;
   }
-  .myaccounttext,
-  .mybagtext {
+  .myaccount-text,
+  .mybag-text {
     width: 150px;
   }
-  .lowheader {
+  .low-header {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-top: 1%;
   }
-  .lowheader ul {
+  .low-header ul {
     display: flex;
     width: 100%;
   }
-  .lowheader li {
+  .low-header li {
     margin-left: 5%;
   }
-  /*Section hero full image*/
+  /*****Section hero full image******/
 
   .hero-image {
     margin-top: 12%;
@@ -528,98 +555,199 @@ footer li {
     position: absolute;
   }
 
-  .divlinkhero {
+  .div-link-hero {
     padding-top: 55%;
   }
 
-  /*Nos produits*/
-  .firstsection {
+  /*******************Nos produits******************/
+  .section-one {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
   }
 
-  .firstthreepictures1 {
+  .first-three-img-s1 {
     display: flex;
     justify-content: center;
     width: 100%;
   }
-  .secondthreepictures1 {
+  .second-three-img-s1 {
     display: flex;
     justify-content: center;
     width: 100%;
   }
 
   /*Section 2 tendances clients */
-  .sectiontwo {
+  .section-two {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  /*modifier les articles de la section 2*/
-  .nostalgicphotosarticle,
-  .instaprintingarticle {
+  /***modifier les articles de la section 2****/
+  .nostalgic-photos-article,
+  .article-insta-printing {
     display: flex;
     justify-content: center;
   }
 
-  .nostalgicphotostext,
-  .instaprintingtext {
+  .text-nostalgic-photos,
+  .text-insta-printing {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .instaprintingarticle {
+  .article-insta-printing {
     display: flex;
     flex-direction: row-reverse;
   }
 
-  .sectiontwo p {
+  .section-two p {
     font-size: 16px;
   }
 
-  .sectiontwo img {
+  .section-two img {
     display: flex;
     width: 30%;
   }
 
-  /*section 5 qui sommes nous*/
-  .sectionfive {
+  /***********Section 3 nos avis clients***************/
+  .svg-customer-advice {
+    width: 40%;
+  }
+
+  /**************section 4 Nos valeurs **********/
+  .article-p-section-four {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-four p {
+    width: 60%;
+  }
+
+  .div-value-icon {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .div-value-icon figcaption {
+    font-size: 13px;
+  }
+
+  /**************section 5 Qui sommes-nous? **********/
+  .section-five {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .whodiv {
+  .div-who {
     display: flex;
     flex-direction: row;
   }
-  .image-pixateam,
-  .image-instagrampixa {
+  .img-pixateam,
+  .img-instagrampixa {
     width: 400px;
     height: 300px;
   }
 
-  /*Footer*/
+  /*******Section 6*****/
+
+  .article-blog {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    text-align: start;
+  }
+  .section-six-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-blog {
+    width: 40%;
+  }
+
+  /**************Réassurance****************/
+  .section-seven {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-payments {
+    width: 20%;
+  }
+
+  .img-laposte {
+    width: 10%;
+  }
+
+  .img-chronopost {
+    width: 20%;
+  }
+  .article-stay-in-touch {
+    align-self: column;
+  }
+  /*************************Footer************************/
 
   .pixagramlogofooter {
     width: 12%;
   }
 
-  h3 {
+  footer h4 {
     display: flex;
     justify-content: start;
     text-align: start;
+    font-size: 15px;
   }
 
-  .footeroptions {
+  .footer-options {
     display: flex;
     text-align: start;
     justify-content: space-between;
-    width: 90%;
+    width: 70%;
+  }
+  footer li {
+    font-size: 12px;
+  }
+
+  .div-newsletter-input {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .text-newsletter {
+    border: 0.5px solid #959595;
+    padding: 5px 10px 5px 10px;
+    margin-right: 5%;
+    font-size: 16px;
+    font-family: "poppins";
+  }
+  .newsletter-button {
+    margin-top: 0;
+    border: 1.7px solid#00cdc6;
+    padding: 7px 15px 7px 15px;
+    border-radius: 20px;
+    color: #fff;
+    background: #00cdc6;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: "poppins";
+  }
+  .div-social-network {
+    margin: 5% 0% 5% 0%;
+  }
+
+  .icon-social-network {
+    margin-left: 4%;
   }
 }
