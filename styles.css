@@ -254,10 +254,17 @@ h3,
 }
 
 /***************Section 3 - Nos avis clients*****************/
-
+.section-three {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .div-customer-advice {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .svg-customer-advice {
   width: 100%;
@@ -613,14 +620,8 @@ footer li {
   }
 
   /***********Section 3 nos avis clients***************/
-  .div-customer-advice {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
   .svg-customer-advice {
-    width: 40%;
+    width: 150%;
   }
 
   /**************section 4 Nos valeurs **********/
