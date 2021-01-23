@@ -8,3 +8,4 @@ Par ailleurs j’aurais bien voulu faire un slider de ce type mais à mon niveau
 -Section blog : je n’ai pas compris la présence des symboles à côté des listes;
 - Je n’ai pas réussi à faire des barres horizontales en décoration du logo pixagram du footer, j’ai tenté les hr mais j’ai du mal à les positionner
 -j’ai eu des warning concernant l’ordre des h1 h2 ..  mais je n’ai pas compris ce que je devais faire malgré mes recherches sur internet, il me semblait les avoir rangé par ordre d’importance
+-Une erreur est apparu dans le correcteur html concernant les svg, cependant je n'ai pas compris comment la corriger
