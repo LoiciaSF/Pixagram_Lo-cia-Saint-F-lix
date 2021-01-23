@@ -142,11 +142,11 @@ h1 {
   padding-top: 90%;
 }
 .div-link-hero a {
-  border: 1.7px solid #fff;
+  border: 1.7px solid #000;
   padding: 10px 20px 10px 20px;
   border-radius: 30px;
-  color: #00cdc6;
-  background: #fff;
+  color: #fff;
+  background: #000;
   font-weight: 700;
   font-size: 15px;
   text-decoration: none;
@@ -228,11 +228,11 @@ h3,
 .first-three-img-s1 a,
 .second-three-img-s1 a,
 .section-five a {
-  border: 2px solid #fff;
+  border: 2px solid #000;
   padding: 0.7rem 1.2rem;
   border-radius: 8px;
-  color: #00cdc6;
-  background: #fff;
+  color: #fff;
+  background: #000;
   font-size: 30px;
   font-weight: 700;
   text-decoration: none;
@@ -405,11 +405,11 @@ footer li {
 }
 .newsletter-button {
   margin-top: 5%;
-  border: 1.7px solid#00cdc6;
+  border: 1.7px solid#000;
   padding: 7px 0px 7px 0px;
   border-radius: 20px;
-  color: #fff;
-  background: #00cdc6;
+  color: #000;
+  background: #000;
   font-weight: 700;
   font-size: 15px;
 }
@@ -734,11 +734,8 @@ footer li {
   }
   .newsletter-button {
     margin-top: 0;
-    border: 1.7px solid#00cdc6;
     padding: 7px 15px 7px 15px;
     border-radius: 20px;
-    color: #fff;
-    background: #00cdc6;
     font-weight: 700;
     font-size: 16px;
     font-family: "poppins";
