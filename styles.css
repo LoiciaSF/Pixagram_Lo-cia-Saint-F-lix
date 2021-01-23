@@ -81,7 +81,7 @@ h1 {
 
 h1 {
   margin-left: 7%;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .right-icon-header {
@@ -197,14 +197,7 @@ h3,
 }
 
 /******Stylyser les images des sections 1 et 5*******/
-.photoalbum-img,
-.photoprinting-img,
-.photocalendar-img,
-.image-photodeco,
-.img-shareandcards,
-.img-photoobjects,
-.img-pixateam,
-.img-instagrampixa {
+.link-img {
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -468,12 +461,7 @@ footer li {
 
 @media (min-width: 1200px) {
   /*dimensionner les images*/
-  .photoalbum-img,
-  .photoprinting-img,
-  .photocalendar-img,
-  .image-photodeco,
-  .img-shareandcards,
-  .img-photoobjects {
+  .link-img {
     margin-left: 5%;
     width: 100%;
     height: 30vh;
@@ -491,12 +479,19 @@ footer li {
     height: 20%;
   }
 
+  .high-header {
+    margin-top: 1%;
+    margin-left: 7%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
   header figure {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 20%;
+    width: 10%;
     margin: 0;
     padding: 0;
   }
@@ -534,6 +529,7 @@ footer li {
   }
   .low-header ul {
     display: flex;
+    justify-content: center;
     width: 100%;
   }
   .low-header li {
@@ -578,7 +574,7 @@ footer li {
     width: 100%;
   }
 
-  /*Section 2 tendances clients */
+  /***************Section 2 tendances clients *******/
   .section-two {
     width: 100%;
     display: flex;
@@ -593,15 +589,18 @@ footer li {
     justify-content: center;
   }
 
-  .text-nostalgic-photos,
-  .text-insta-printing {
+  .section-two-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: 50%;
   }
+
   .article-insta-printing {
     display: flex;
     flex-direction: row-reverse;
+    margin-top: 5%;
   }
 
   .section-two p {
@@ -614,6 +613,12 @@ footer li {
   }
 
   /***********Section 3 nos avis clients***************/
+  .div-customer-advice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .svg-customer-advice {
     width: 40%;
   }
